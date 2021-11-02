@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/selector_wifi_item" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:focusable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="60.0dip">
+        <TextView android:textColor="@color/item_text_color" android:id="@id/tv_bluetooth_name" android:focusable="false" android:duplicateParentState="true" android:layout_marginLeft="@dimen/_24dp" android:singleLine="true" style="@style/SettingSubTextView" />
+        <ImageView android:id="@id/iv_bluetooth_type" android:focusable="false" android:visibility="invisible" android:duplicateParentState="true" android:layout_width="@dimen/_50dp" android:layout_height="@dimen/_50dp" style="@style/SettingRightImageView" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/item_text_color" android:ellipsize="end" android:id="@id/tv_bluetooth_status" android:focusable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_30dp" android:maxEms="30" android:singleLine="true" android:layout_toLeftOf="@id/iv_bluetooth_type" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bw="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="26.0sp" android:visibility="gone" android:layout_marginTop="0.0dip" android:text="@string/setting_net_static_ip" style="@style/SettingSubTitlePlaceholder" />
+    <TextView android:textSize="26.0sp" android:layout_marginLeft="@dimen/_153dp" style="@style/text_ok_style" />
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/et_static_ip" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" android:layout_marginTop="@dimen/_5dp" bw:name="@string/network_static_ip" />-->
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/et_static_mask" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" bw:name="@string/network_static_mask" />-->
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/et_static_getway" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" bw:name="@string/network_static_getway" />-->
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/et_static_dns1" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" bw:name="@string/network_static_dns1" />-->
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/et_static_dns2" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" bw:name="@string/network_static_dns2" />-->
+    <Button android:textSize="@dimen/_38sp" android:textColor="@color/item_text_color" android:layout_gravity="center_horizontal" android:id="@id/btn_static_connect" android:background="@drawable/ic_btn_selector" android:nextFocusUp="@id/et_static_dns2" android:nextFocusDown="@id/btn_static_connect" android:layout_width="@dimen/_260dp" android:layout_height="@dimen/_100dp" android:layout_marginTop="@dimen/_5dp" android:text="@string/pppoe_connect" />
+</LinearLayout>

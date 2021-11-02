@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="160" android:drawable="@drawable/check_net_1" />
+    <item android:duration="160" android:drawable="@drawable/check_net_2" />
+    <item android:duration="160" android:drawable="@drawable/check_net_3" />
+    <item android:duration="160" android:drawable="@drawable/check_net_4" />
+    <item android:duration="160" android:drawable="@drawable/check_net_5" />
+    <item android:duration="160" android:drawable="@drawable/check_net_6" />
+    <item android:duration="160" android:drawable="@drawable/check_net_7" />
+    <item android:duration="160" android:drawable="@drawable/check_net_8" />
+    <item android:duration="160" android:drawable="@drawable/check_net_9" />
+    <item android:duration="160" android:drawable="@drawable/check_net_10" />
+    <item android:duration="160" android:drawable="@drawable/check_net_11" />
+    <item android:duration="160" android:drawable="@drawable/check_net_12" />
+    <item android:duration="160" android:drawable="@drawable/check_net_13" />
+</animation-list>

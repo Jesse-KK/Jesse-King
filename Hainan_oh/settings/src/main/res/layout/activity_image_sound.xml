@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_31dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingPartTitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="0.0dip"
+            android:text="@string/setting_figure" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/sv_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/setting_wlan_home"
+            android:layout_width="@dimen/_820dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wifi_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:padding="10.0dip"
+                android:text="@string/setting_figure_setting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36dp" />
+
+            <RelativeLayout
+                android:id="@+id/resolution_setting"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/image_size">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_figure_resolving"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@id/wifi_detail_right_arrow"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_right_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image_size"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_2">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_figure_location"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@id/wifi_detail_right_arrow"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_right_selector" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/eth_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:padding="10.0dip"
+                android:text="@string/setting_figure_player"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36dp" />
+
+            <RelativeLayout
+                android:id="@+id/clarity_setting"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/image_ratio">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="清晰度设置"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@id/wifi_detail_left_arrow"
+                    style="@style/SettingRightImageView"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_toLeftOf="@id/clarity_setting_switch"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_left_selector" />
+
+                <TextView
+                    android:id="@+id/clarity_setting_switch"
+                    style="@style/SettingSubChangeText"
+                    android:layout_toLeftOf="@id/wifi_detail_right_arrow"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_quality_clarity"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@id/wifi_detail_right_arrow"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_right_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image_ratio"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_4">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="画面比例设置"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@id/wifi_detail_left_arrow"
+                    style="@style/SettingRightImageView"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_toLeftOf="@id/image_ratio_switch"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_left_selector" />
+
+                <TextView
+                    android:id="@+id/image_ratio_switch"
+                    style="@style/SettingSubChangeText"
+                    android:layout_toLeftOf="@id/wifi_detail_right_arrow"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_ratio_full"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@id/wifi_detail_right_arrow"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_right_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sound_transmission"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="声音透传"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@id/wifi_detail_right_arrow"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_right_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

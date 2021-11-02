@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_output_dispalystandard" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_figure_resolving" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_output_location" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_figure_location" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_output_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_player_quality" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_output_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_screen_ratio" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_output_passthrough" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_passthrough" />-->
+</LinearLayout>

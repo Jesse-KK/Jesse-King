@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_hint" android:paddingTop="@dimen/_146dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/_36sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_operating_hints_title1" />
+        <ImageView android:layout_gravity="center" android:id="@id/menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu" />
+        <TextView android:textSize="@dimen/_36sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_operating_hints_title2" />
+        <ImageView android:layout_gravity="center" android:id="@id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" />
+        <TextView android:textSize="@dimen/_36sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_operating_hints_title3" />
+    </LinearLayout>
+    <ImageView android:id="@id/map_reminder" android:layout_width="@dimen/_394dp" android:layout_height="@dimen/_727dp" android:src="@drawable/map_reminder" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/mobile_box" android:layout_width="@dimen/_163dp" android:layout_height="@dimen/_37dp" android:layout_marginTop="@dimen/_90dp" android:src="@drawable/mobile_box" android:layout_alignTop="@id/map_reminder" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/_28sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_40dp" android:text="@string/bluetooth_operating_hints" android:layout_below="@id/ll_hint" android:layout_centerHorizontal="true" />
+</RelativeLayout>

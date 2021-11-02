@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bw="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_190dp" android:layout_marginTop="@dimen/_80dp">
+        <TextView android:textSize="26.0sp" android:layout_gravity="center" android:layout_marginTop="0.0dip" android:text="@string/setting_net_wifi" style="@style/SettingPartTitle" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/setting_wifi_detail_item_1" android:background="@drawable/selector_wifi_item" android:focusable="true" android:nextFocusDown="@id/setting_wifi_detail_item_2" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp">
+        <TextView android:textSize="22.0sp" android:textColor="@drawable/item_text_color" android:duplicateParentState="true" android:text="@string/wifi_manual_operation" style="@style/SettingSubTextView" />
+        <ImageView android:id="@id/wifi_detail_left_arrow" android:duplicateParentState="true" android:layout_marginRight="@dimen/_5dp" android:src="@drawable/ic_arrow_left_selector" android:layout_toLeftOf="@id/tv_wifi_manual_change" android:layout_alignParentRight="false" style="@style/SettingRightImageView" />
+        <TextView android:textSize="22.0sp" android:textColor="@drawable/item_text_color" android:id="@id/tv_wifi_manual_change" android:duplicateParentState="true" android:text="@string/setting_open" android:layout_toLeftOf="@id/wifi_detail_right_arrow" style="@style/SettingSubChangeText" />
+        <ImageView android:id="@id/wifi_detail_right_arrow" android:duplicateParentState="true" android:src="@drawable/ic_arrow_right_selector" style="@style/SettingRightImageView" />
+    </RelativeLayout>
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/setting_wifi_detail_item_2" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" bw:name="@string/wifi_ip_address" />-->
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/setting_wifi_detail_item_3" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" bw:name="@string/wifi_mask" />-->
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/setting_wifi_detail_item_4" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" bw:name="@string/wifi_getway" />-->
+<!--    <com.shcmcc.setting.custonview.IpV4AddEditText android:layout_gravity="center_horizontal" android:id="@id/setting_wifi_detail_item_5" android:layout_width="@dimen/_820dp" android:layout_height="@dimen/_120dp" bw:name="@string/wifi_dns_server" />-->
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_180dp">
+        <Button android:textSize="@dimen/_38sp" android:textColor="@drawable/item_text_color" android:id="@id/setting_wifi_detail_confirm_btn" android:background="@drawable/ic_btn_selector" android:focusable="true" android:nextFocusUp="@id/setting_wifi_detail_item_5" android:nextFocusDown="@id/setting_wifi_detail_confirm_btn" android:layout_width="@dimen/_260dp" android:layout_height="@dimen/_105dp" android:text="@string/wifi_save" android:layout_below="@id/setting_wifi_detail_item_5" />
+        <Button android:textSize="@dimen/_38sp" android:textColor="@drawable/item_text_color" android:id="@id/setting_wifi_detail_cancel_btn" android:background="@drawable/ic_btn_selector" android:focusable="true" android:nextFocusUp="@id/setting_wifi_detail_item_5" android:nextFocusDown="@id/setting_wifi_detail_cancel_btn" android:layout_width="@dimen/_260dp" android:layout_height="@dimen/_105dp" android:layout_marginLeft="@dimen/_90dp" android:text="@string/wifi_cancel" android:layout_below="@id/setting_wifi_detail_item_5" />
+    </LinearLayout>
+</LinearLayout>

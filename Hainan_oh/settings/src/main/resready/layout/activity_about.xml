@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/_30dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_about_device_message" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/device_message" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_about_version_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/service_frame_version_detaile" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_about_service_type" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/service_type" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_about_device_diagnose" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_net_diagnose" />-->
+</LinearLayout>

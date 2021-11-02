@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_net_route" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_net_route_setting" />
+    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_net_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_net_wifi2" />
+    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_net_communication" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_net_communication" />
+    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_net_wlan" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_net_ap" />
+    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_net_ipv4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_net_ipv4" />
+    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_net_ipv6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_net_ipv6" />
+    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_net_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/setting_net_preference" />
+    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_net_message" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/network_message" />
+</LinearLayout>

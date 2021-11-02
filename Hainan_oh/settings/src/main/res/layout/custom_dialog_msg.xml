@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@+id/ll_pb_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_230dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/custom_progressbar" android:layout_width="@dimen/_100dp" android:layout_height="@dimen/_100dp" android:layout_centerHorizontal="true" style="@style/progressbar_style1" />
+    <TextView android:textSize="@dimen/_36sp" android:textColor="@color/upgrade_checking" android:id="@id/custom_progressbar_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_100dp" android:layout_below="@id/custom_progressbar" android:layout_centerHorizontal="true" />
+</RelativeLayout>
