@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_350dp">
+        <TextView android:textSize="26.0sp" android:layout_gravity="center" android:layout_marginTop="0.0dip" android:text="@string/setting_net_ap" style="@style/SettingPartTitle" />
+    </LinearLayout>
+    <TextView android:layout_marginLeft="@dimen/_620dp" style="@style/text_ok_style" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_144dp" android:layout_marginTop="@dimen/_5dp">
+        <LinearLayout android:gravity="center" android:layout_width="@dimen/_100dp" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/_510dp">
+            <TextView android:textSize="@dimen/_36sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/network_hot_name" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="@dimen/_704dp" android:layout_height="80.0dip">
+            <EditText android:textSize="@dimen/_42sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/ap_name" android:background="@drawable/edittext_selector_on" android:paddingLeft="@dimen/_30dp" android:paddingRight="@dimen/_30dp" android:focusable="true" android:nextFocusUp="@id/ap_name" android:nextFocusDown="@id/custom_password_edittext" android:layout_width="@dimen/_698dp" android:layout_height="fill_parent" android:singleLine="true" android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_124dp">
+        <LinearLayout android:gravity="center" android:layout_width="@dimen/_100dp" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/_510dp">
+            <TextView android:textSize="@dimen/_36sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/network_pppoe_password" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/password" android:layout_width="@dimen/_704dp" android:layout_height="@dimen/_124dp">
+            <EditText
+                android:id="@+id/wifiappassword"
+                android:layout_width="@dimen/_488dp"
+                android:layout_height="fill_parent"
+                android:textSize="@dimen/_42sp"
+                android:focusable="true"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/_30dp"
+                android:paddingRight="@dimen/_30dp"
+                android:layout_marginLeft="7dp"
+                android:nextFocusUp="@id/pppoe_connection_account"
+                android:nextFocusDown="@id/button_confirm_pppoe_connection"
+                android:background="@drawable/edittext_selector_on" />
+            <Button
+                android:id="@+id/button_ipoepassword_visibility6"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:layout_alignParentRight="true"
+                android:text="显示"
+                android:background="@drawable/selector_wifi_item"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_148dp" android:layout_marginTop="@dimen/_100dp">
+        <Button android:textSize="@dimen/_42sp" android:textColor="@drawable/item_text_color" android:layout_gravity="center_horizontal" android:id="@id/btn_ap_startup" android:background="@drawable/selector_wifi_item" android:nextFocusUp="@id/custom_password_edittext" android:nextFocusDown="@id/btn_ap_startup" android:layout_width="@dimen/_260dp" android:layout_height="@dimen/_105dp" android:layout_marginTop="@dimen/_36dp" android:text="@string/network_ap_startup" />
+        <Button android:textSize="@dimen/_42sp" android:textColor="@drawable/item_text_color" android:layout_gravity="center_horizontal" android:id="@+id/btn_ap_cancel" android:background="@drawable/selector_wifi_item" android:nextFocusUp="@id/custom_password_edittext" android:nextFocusDown="@id/btn_ap_startup" android:layout_width="@dimen/_260dp" android:layout_height="@dimen/_105dp" android:layout_marginTop="@dimen/_36dp" android:text="取消" />
+
+    </LinearLayout>
+</LinearLayout>

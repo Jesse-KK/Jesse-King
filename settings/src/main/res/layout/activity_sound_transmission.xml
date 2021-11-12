@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_200dp" android:layout_marginTop="@dimen/_31dp">
+        <TextView android:layout_gravity="center" android:layout_marginTop="0.0dip" android:text="@string/setting_passthrough" style="@style/SettingPartTitle" />
+    </LinearLayout>
+    <ScrollView android:id="@id/sv_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/setting_wlan_home" android:layout_width="@dimen/_820dp" android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/wifi_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:padding="10.0dip"
+                android:text="@string/setting_passthrough"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36dp" />
+            <RelativeLayout
+                android:id="@+id/sound_transmission"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="HDMI透传"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@+id/pwd_protect_left_arrow"
+                    style="@style/SettingRightImageView"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginRight="@dimen/_5dp"
+                    android:layout_toLeftOf="@id/transmission_close_on"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_left_selector" />
+
+                <TextView
+                    android:id="@+id/transmission_close_on"
+                    style="@style/SettingSubChangeText"
+                    android:layout_toLeftOf="@+id/pwd_protect_right_arrow"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_close"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@+id/pwd_protect_right_arrow"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ic_arrow_right_selector" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

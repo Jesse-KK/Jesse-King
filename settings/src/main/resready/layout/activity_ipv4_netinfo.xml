@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_network_info_ipv4_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/network_static_ip" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_network_info_ipv4_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/network_static_mask" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_network_info_ipv4_getway" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/network_static_getway" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_network_info_ipv4_dns1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/network_static_dns1" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_network_info_ipv4_dns2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/network_static_dns2" />-->
+</LinearLayout>

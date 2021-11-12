@@ -1,0 +1,1011 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="alert_network_cfg_dns" translatable="false">DNS地址不合格</string>
+    <string name="alert_network_cfg_dns2" translatable="false">备用DNS地址不合格</string>
+    <string name="alert_network_cfg_dns_null" translatable="false">请输入DNS地址</string>
+    <string name="alert_network_cfg_gateway" translatable="false">网关地址不合格</string>
+    <string translatable="false" name="alert_network_cfg_gateway_null">请输入网关地址</string>
+    <string name="eth_account_error">Can\'t Be Empty</string>
+    <string name="eth_ip_settings_invalid_network_prefix_length" msgid="40470058023181052">请输入有效掩码长度：0-32</string>
+    <string name="eth_ip_settings_invalid_network_prefix_length_v6" msgid="40470058023181052">请输入有效掩码长度：0-64</string>
+    <string translatable="false" name="alert_network_cfg_ip">IP地址不合格</string>
+    <string translatable="false" name="alert_network_cfg_ip_getway">IP地址、网关地址不匹配</string>
+    <string translatable="false" name="alert_network_cfg_ip_mask">IP地址、子网掩码不匹配</string>
+    <string translatable="false" name="alert_network_cfg_ip_null">请输入IP地址</string>
+    <string translatable="false" name="alert_network_cfg_mask">子网掩码地址不合格</string>
+    <string translatable="false" name="alert_network_cfg_mask_length">子网掩码错误，请输入0-128</string>
+    <string translatable="false" name="alert_network_cfg_mask_null">请输入子网掩码</string>
+    <string translatable="false" name="alert_network_cfg_please_dns">请输入正确的DNS地址</string>
+    <string translatable="false" name="alert_network_cfg_please_dns2">请输入正确的备用DNS</string>
+    <string translatable="false" name="alert_network_cfg_please_gateway">请输入正确的网关地址</string>
+    <string translatable="false" name="alert_network_cfg_please_ip">请输入正确的IP地址</string>
+    <string translatable="false" name="alert_network_cfg_please_mask">请输入正确的子网掩码</string>
+    <string translatable="false" name="alert_network_cfg_please_mask_v6">请输入前缀长度</string>
+    <string translatable="false" name="alert_network_cfg_please_not_same_ip_gateway">请输入正确的IP地址和网关地址</string>
+    <string translatable="false" name="alert_network_cfg_please_three">请输入正确的IP地址、子网掩码和网关地址</string>
+    <string translatable="false" name="alert_network_cfg_please_three_v6">请输入正确的IP地址、前缀长度和网关地址</string>
+    <string translatable="false" name="and">与</string>
+    <string translatable="false" name="app_name">设置应用</string>
+    <string translatable="false" name="auto_system_disable_wifi">设置是否启用WiFi功能</string>
+    <string translatable="false" name="auto_system_disable_wifi_desc">当关闭WiFi功能时，系统设置页面不再提供WiFi连接</string>
+    <string translatable="false" name="auto_system_disable_wifi_desc2">设置入口，无法通过WiFi连接网络。</string>
+    <string translatable="false" name="auto_system_sleep_desc">系统将在设定的时间段提示待机。若一段时间内，用户在</string>
+    <string translatable="false" name="auto_system_sleep_desc2">提示页面无任何操作，系统将自动待机。</string>
+    <string translatable="false" name="auto_system_sleep_msg">系统自动待机提醒时间：</string>
+    <string translatable="false" name="auto_system_sleep_title">设置自动待机提醒时间</string>
+    <string translatable="false" name="auto_system_wifi_hardware_msg">硬件不支持WiFi功能</string>
+    <string translatable="false" name="auto_system_wifi_msg">WiFi功能</string>
+    <string translatable="false" name="available_disk_memory">已用</string>
+    <string translatable="false" name="bluetooth">蓝牙</string>
+    <string translatable="false" name="bluetooth_checking">检测中</string>
+    <string translatable="false" name="bluetooth_close">关闭</string>
+    <string translatable="false" name="bluetooth_close_info">蓝牙未启用</string>
+    <string translatable="false" name="bluetooth_close_tips">蓝牙打开失败，请确认有蓝牙设备且可用</string>
+    <string translatable="false" name="bluetooth_confirm_passkey_msg">要与以下设备配对：&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;%1$s&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;请确保其显示的配对密钥为：&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;%2$s&amp;lt;/b&amp;gt;</string>
+    <string translatable="false" name="bluetooth_connect">连接设备</string>
+    <string translatable="false" name="bluetooth_connect_ok">已连接</string>
+    <string translatable="false" name="bluetooth_connecting">连接中</string>
+    <string translatable="false" name="bluetooth_dialog_connect_cancelbtn">取消配对</string>
+    <string translatable="false" name="bluetooth_dialog_connect_positivebtn">直接连接</string>
+    <string translatable="false" name="bluetooth_dialog_descovery">搜索蓝牙设备</string>
+    <string translatable="false" name="bluetooth_dialog_descovery_cancel">已暂停</string>
+    <string translatable="false" name="bluetooth_dialog_descovery_finish">搜索结束</string>
+    <string translatable="false" name="bluetooth_dialog_descovery_not">未搜索</string>
+    <string translatable="false" name="bluetooth_dialog_descoverying">搜索中...</string>
+    <string translatable="false" name="bluetooth_dialog_descoverying_status">正在搜索中，无法关闭蓝牙</string>
+    <string translatable="false" name="bluetooth_dialog_match_cancelbtn">取消</string>
+    <string translatable="false" name="bluetooth_dialog_match_positivebtn">配对</string>
+    <string translatable="false" name="bluetooth_dialog_matchsuccess">与%1$s配对，密钥为:%2$s</string>
+    <string translatable="false" name="bluetooth_dialog_request_cancelbtn">取消</string>
+    <string translatable="false" name="bluetooth_dialog_request_message2">您可能需要在蓝牙设备上输入同样的PIN</string>
+    <string translatable="false" name="bluetooth_dialog_request_pin_info1">输入PIN与</string>
+    <string translatable="false" name="bluetooth_dialog_request_pin_info2">配对。（通常为0000或1234）</string>
+    <string translatable="false" name="bluetooth_dialog_request_positivebtn">确定</string>
+    <string translatable="false" name="bluetooth_dialog_request_title">蓝牙配对请求</string>
+    <string translatable="false" name="bluetooth_disconnect">断开连接</string>
+    <string translatable="false" name="bluetooth_discovered_devices">已搜索到的设备</string>
+    <string translatable="false" name="bluetooth_display_passkey_pin_msg">要与 &amp;lt;br&amp;gt;&amp;lt;b&amp;gt;%1$s&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; 设备配对，请在该设备上键入：&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;%2$s&amp;lt;/b&amp;gt;，然后按回车键。</string>
+    <string translatable="false" name="bluetooth_enable_alphanumeric_pin">PIN 由字母或符号组成</string>
+    <string translatable="false" name="bluetooth_enter_passkey_msg">要与 &amp;lt;br&amp;gt;&amp;lt;b&amp;gt;%1$s&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; 设备配对，请键入该设备所需的配对密钥：</string>
+    <string translatable="false" name="bluetooth_enter_passkey_other_device">您可能还需要在另一台设备上输入此密钥。</string>
+    <string translatable="false" name="bluetooth_enter_pin_msg">要与 &amp;lt;br&amp;gt;&amp;lt;b&amp;gt;%1$s&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; 设备配对，请键入该设备所需的 PIN：</string>
+    <string translatable="false" name="bluetooth_enter_pin_other_device">您可能还需要在另一台设备上输入此 PIN。</string>
+    <string translatable="false" name="bluetooth_error_cannot_open">请确认内置蓝牙驱动是否可用，或已插入外置蓝牙设备!</string>
+    <string translatable="false" name="bluetooth_exception_cannot_refreshed">操作过于频繁设备无法刷新</string>
+    <string translatable="false" name="bluetooth_exception_should_open_or_close">请重新开启或关闭蓝牙</string>
+    <string translatable="false" name="bluetooth_incoming_pairing_msg">来自：&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;%1$s&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;要与此设备配对吗？</string>
+    <string translatable="false" name="bluetooth_info_title">蓝牙信息:</string>
+    <string translatable="false" name="bluetooth_isopen">已开启</string>
+    <string translatable="false" name="bluetooth_item_bounding">绑定中</string>
+    <string translatable="false" name="bluetooth_item_has_bound">已绑定</string>
+    <string translatable="false" name="bluetooth_item_not_bound">未绑定</string>
+    <string translatable="false" name="bluetooth_item_searching">检测中</string>
+    <string translatable="false" name="bluetooth_matched_cancel">解除绑定</string>
+    <string translatable="false" name="bluetooth_matched_cancel_failed">解除绑定失败</string>
+    <string translatable="false" name="bluetooth_matched_cancel_key">解除与%1$s绑定</string>
+    <string translatable="false" name="bluetooth_matched_key">您之前已与 %1$s配对</string>
+    <string translatable="false" name="bluetooth_matched_nok">未配对</string>
+    <string translatable="false" name="bluetooth_matched_ok">已配对</string>
+    <string translatable="false" name="bluetooth_matching">配对中</string>
+    <string translatable="false" name="bluetooth_matching_failed">蓝牙配对失败</string>
+    <string translatable="false" name="bluetooth_matching_key">与 %1$s配对，密钥为：%2$s</string>
+    <string translatable="false" name="bluetooth_not_connect">蓝牙未连接</string>
+    <string translatable="false" name="bluetooth_notopen">未开启</string>
+    <string translatable="false" name="bluetooth_open">打开</string>
+    <string translatable="false" name="bluetooth_open_or_close_info">请重新开启或关闭蓝牙</string>
+    <string translatable="false" name="bluetooth_open_status">蓝牙开关</string>
+    <string translatable="false" name="bluetooth_operate_failed">操作过于频繁设备无法刷新</string>
+    <string translatable="false" name="bluetooth_operating_hints">遥控器进入配对模式后(指示灯闪烁时),机顶盒自动完成配对连接</string>
+    <string translatable="false" name="bluetooth_operating_hints_title1">按住菜单键 </string>
+    <string translatable="false" name="bluetooth_operating_hints_title2"> 和返回键 </string>
+    <string translatable="false" name="bluetooth_operating_hints_title3"> 靠近机顶盒</string>
+    <string translatable="false" name="bluetooth_pairing_accept">配对</string>
+    <string translatable="false" name="bluetooth_pairing_decline">取消</string>
+    <string translatable="false" name="bluetooth_pairing_device_down_error_message">无法与“%1$s”进行通信。</string>
+    <string translatable="false" name="bluetooth_pairing_devices">已配对的设备</string>
+    <string translatable="false" name="bluetooth_pairing_error_message">无法与“%1$s”进行配对。</string>
+    <string translatable="false" name="bluetooth_pairing_pin_error_message">PIN 或配对密钥不正确，无法与“%1$s”配对。</string>
+    <string translatable="false" name="bluetooth_pairing_rejected_error_message">%1$s 已拒绝配对。</string>
+    <string translatable="false" name="bluetooth_pairing_request">蓝牙配对请求</string>
+    <string translatable="false" name="bluetooth_pin_values_hint">通常为 0000 或 1234</string>
+    <string translatable="false" name="bluetooth_shared_status">(附近蓝牙设备对此设备可见)</string>
+    <string translatable="false" name="bluetooth_shared_status_disable">(附件蓝牙设备对此设备不可见)</string>
+    <string translatable="false" name="bluetooth_toast_disable_shared">蓝牙未打开，未能开启分享</string>
+    <string translatable="false" name="bluetooth_toast_discovery_before_enable">请确保蓝牙已开启，然后执行搜索</string>
+    <string translatable="false" name="bluetooth_toast_has_broken">蓝牙硬件或驱动已损坏！</string>
+    <string translatable="false" name="bluetooth_toast_long_press_unbonded">长按确定键解除绑定</string>
+    <string translatable="false" name="bluetooth_toast_release_bound">解除绑定</string>
+    <string translatable="false" name="bluetooth_toast_release_bound_failed">解除绑定失败</string>
+    <string translatable="false" name="bluetooth_unbond">取消配对</string>
+    <string translatable="false" name="bluetooth_visible_close_info">关闭可见性可能影响文件传输</string>
+    <string translatable="false" name="btn_restory_n">取消</string>
+    <string translatable="false" name="btn_restory_y">确定</string>
+    <string translatable="false" name="cancel">取消</string>
+    <string translatable="false" name="check_ip_mask">请检查IP和子网掩码...</string>
+    <string translatable="false" name="check_password_is_empty">请检查，密码不能为空</string>
+    <string translatable="false" name="check_update">检测更新</string>
+    <string translatable="false" name="checking_update">正在检测更新......</string>
+    <string translatable="false" name="common_cancel">取 消</string>
+    <string translatable="false" name="common_confirm">确 认</string>
+    <string translatable="false" name="common_hide_password">隐 藏</string>
+    <string translatable="false" name="common_show_password">显 示</string>
+    <string translatable="false" name="connect_wifi_name">输入密码连接</string>
+    <string translatable="false" name="connected_network">已连接到的网络</string>
+    <string translatable="false" name="contact_servicer">联系客服</string>
+    <string translatable="false" name="deivces_serial_number">32位序列号</string>
+    <string translatable="false" name="delay_time_desc">在网络未连通的情况下，系统将根据设置值执行延时启动</string>
+    <string translatable="false" name="delay_time_edit_desc">按确认键使用输入法</string>
+    <string translatable="false" name="delay_time_edit_hint">请输入时间</string>
+    <string translatable="false" name="delay_time_edit_title">延时启动时间</string>
+    <string translatable="false" name="delay_time_edit_unit">秒</string>
+    <string translatable="false" name="delay_time_ensure">确定</string>
+    <string translatable="false" name="delay_time_title">设置系统延时启动时间</string>
+    <string translatable="false" name="device_message">设备信息</string>
+    <string translatable="false" name="device_name">设备名称</string>
+    <string translatable="false" name="device_name_migu">魔百和</string>
+    <string translatable="false" name="device_type">产品型号</string>
+    <string translatable="false" name="devices_android_version">Android 版本</string>
+    <string translatable="false" name="devices_client_devices_number">15位序列号</string>
+    <string translatable="false" name="devices_devices_cpu">处理器</string>
+    <string translatable="false" name="devices_devices_memory">内存容量</string>
+    <string translatable="false" name="devices_devices_model">设备型号</string>
+    <string translatable="false" name="devices_devices_storage">存储容量</string>
+    <string translatable="false" name="devices_iptv_version">IPTV应用版本</string>
+    <string translatable="false" name="devices_licence_version">牌照方应用版本</string>
+    <string translatable="false" name="devices_mac_address">有线 MAC</string>
+    <string translatable="false" name="devices_software_version">软件版本</string>
+    <string translatable="false" name="devices_unite_gateway_version">门户版本</string>
+    <string translatable="false" name="devices_unite_player_version">统一播放器版本</string>
+    <string translatable="false" name="devices_wlan_mac">无线 MAC</string>
+    <string translatable="false" name="dhcp_connect">连接</string>
+    <string translatable="false" name="dhcp_disconnect">未连接</string>
+    <string translatable="false" name="disk_message">磁盘信息</string>
+    <string translatable="false" name="display_change_cancel">取消(%1$s)</string>
+    <string translatable="false" name="display_change_cancel_init">取消</string>
+    <string translatable="false" name="display_change_confirm">确认</string>
+    <string translatable="false" name="display_change_hint">确认分辨率设置为%1$s吗?</string>
+    <string translatable="false" name="display_change_position">改变图像位置</string>
+    <string translatable="false" name="display_mod_set">Set Mode</string>
+    <string translatable="false" name="display_no_support">您的电视机不支持%1$s图像</string>
+    <string translatable="false" name="display_position">图像</string>
+    <string translatable="false" name="display_position_bottom">按\"下键\"上下拉伸</string>
+    <string translatable="false" name="display_position_detail">按\"上键\" \"下键\" \"左键\" \"右键\"调整画面输出区域</string>
+    <string translatable="false" name="display_position_left">按\"左键\"左右收缩</string>
+    <string translatable="false" name="display_position_right">按\"右键\"左右拉伸</string>
+    <string translatable="false" name="display_position_top">按\"上键\"上下收缩</string>
+    <string translatable="false" name="display_set">更多分辨率</string>
+    <string translatable="false" name="display_set_1080i_50">1080I_50Hz</string>
+    <string translatable="false" name="display_set_1080i_60">1080I_60Hz</string>
+    <string translatable="false" name="display_set_1080p_50">1080P_50Hz</string>
+    <string translatable="false" name="display_set_1080p_60">1080P_60Hz</string>
+    <string translatable="false" name="display_set_480p">480P_60Hz</string>
+    <string translatable="false" name="display_set_576p">576P_50Hz</string>
+    <string translatable="false" name="display_set_720p_50">720P_50Hz</string>
+    <string translatable="false" name="display_set_720p_60">720P_60Hz</string>
+    <string translatable="false" name="display_standard_1080i_50">1080I_50Hz</string>
+    <string translatable="false" name="display_standard_1080i_60">1080I_60Hz</string>
+    <string translatable="false" name="display_standard_1080p_50">1080P_50Hz</string>
+    <string translatable="false" name="display_standard_1080p_60">1080P_60Hz</string>
+    <string translatable="false" name="display_standard_3840_2160p_24">4K(3840x2160)_24Hz</string>
+    <string translatable="false" name="display_standard_3840_2160p_25">4K(3840x2160)_25Hz</string>
+    <string translatable="false" name="display_standard_3840_2160p_30">4K(3840x2160)_30Hz</string>
+    <string translatable="false" name="display_standard_3840_2160p_50">4K(3840x2160)_50Hz</string>
+    <string translatable="false" name="display_standard_3840_2160p_60">4K(3840x2160)_60Hz</string>
+    <string translatable="false" name="display_standard_4096_2160p_24">4K(4096x2160)_24Hz</string>
+    <string translatable="false" name="display_standard_4096_2160p_25">4K(4096x2160)_25Hz</string>
+    <string translatable="false" name="display_standard_4096_2160p_30">4K(4096x2160)_30Hz</string>
+    <string translatable="false" name="display_standard_4096_2160p_50">4K(4096x2160)_50Hz</string>
+    <string translatable="false" name="display_standard_4096_2160p_60">4K(4096x2160)_60Hz</string>
+    <string translatable="false" name="display_standard_720p_50">720P_50Hz</string>
+    <string translatable="false" name="display_standard_720p_60">720P_60Hz</string>
+    <string translatable="false" name="display_standard_ntsc">NTSC</string>
+    <string translatable="false" name="display_standard_pal">PAL</string>
+    <string translatable="false" name="downloading_upgrade_file">正在下载升级包</string>
+    <string translatable="false" name="immediately_update">立即更新</string>
+    <string translatable="false" name="ip_address_fail">IP地址错误</string>
+    <string translatable="false" name="ipv4_address">IPV4地址</string>
+    <string translatable="false" name="ipv6_address">IPV6地址</string>
+    <string translatable="false" name="law_declare">法律条文</string>
+    <string translatable="false" name="law_protect_declare">《版权保护投诉指引》</string>
+    <string translatable="false" name="network_ap_startup">保存</string>
+    <string translatable="false" name="network_app_speed">iCNTV:</string>
+    <string translatable="false" name="network_average_speed">平均速度：</string>
+    <string translatable="false" name="network_check_completed">检测完成，未发现异常</string>
+    <string translatable="false" name="network_check_dns_server">DNS配置正确</string>
+    <string translatable="false" name="network_check_inner_network">内网连接正常</string>
+    <string translatable="false" name="network_check_inner_network_delayed">内网平均延时：1毫秒 丢包率%1$s</string>
+    <string translatable="false" name="network_check_network_support_http">网络支持HTTP range</string>
+    <string translatable="false" name="network_check_outer_network">外网连接正常</string>
+    <string translatable="false" name="network_check_server_connect">与服务器的连接正常</string>
+    <string translatable="false" name="network_check_server_delayed">服务器平均延时：60毫秒 丢包率%1$s</string>
+    <string translatable="false" name="network_current_speed">当前速度：</string>
+    <string translatable="false" name="network_dns">DNS地址：</string>
+    <string translatable="false" name="network_dns2">备用DNS：</string>
+    <string translatable="false" name="network_gateway">网关地址：</string>
+    <string translatable="false" name="network_getway_check">内网平均延时：%1$f毫秒 丢包率%2$s</string>
+    <string translatable="false" name="network_hot_name">SSID</string>
+    <string translatable="false" name="network_ip">I P  地  址：</string>
+    <string translatable="false" name="network_mac_is_close">未开启</string>
+    <string translatable="false" name="network_mask">子网掩码：</string>
+    <string translatable="false" name="network_message">网络信息</string>
+    <string translatable="false" name="network_message_ipv4">有线IPv4网络信息</string>
+    <string translatable="false" name="network_message_ipv6">有线IPv6网络信息</string>
+    <string translatable="false" name="network_optimize_advice">网络优化建议</string>
+    <string translatable="false" name="network_optimize_advice_dns_network_1_1">检查DNS配置</string>
+    <string translatable="false" name="network_optimize_advice_dns_network_1_2">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_dns_network_2_1">检查DNS配置</string>
+    <string translatable="false" name="network_optimize_advice_dns_network_2_2">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_1_1">检查有线网络是否连接</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_1_2">检测无线网络是否配置</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_1_3">挪近路由器或优化WIFI信道</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_2_1">检查有线网络配置</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_2_2">检查无线连接配置</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_2_3">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_3_1">检查有线网络配置</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_3_2">检查无线网络配置</string>
+    <string translatable="false" name="network_optimize_advice_inner_network_3_3">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_outer_network_1_1">检查PPPOE账户密码</string>
+    <string translatable="false" name="network_optimize_advice_outer_network_1_2">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_outer_network_1_3">联系宽带运营商</string>
+    <string translatable="false" name="network_optimize_advice_outer_network_2_1">检查PPPOE账户密码</string>
+    <string translatable="false" name="network_optimize_advice_outer_network_2_2">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_outer_network_2_3">联系宽带运营商</string>
+    <string translatable="false" name="network_optimize_advice_ping_1">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_ping_2">挪近路由器或更换WIFI信道</string>
+    <string translatable="false" name="network_optimize_advice_ping_3">更换路由器</string>
+    <string translatable="false" name="network_optimize_advice_server_1_1">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_server_1_2">联系客服</string>
+    <string translatable="false" name="network_optimize_advice_server_2_1">检查路由器配置</string>
+    <string translatable="false" name="network_optimize_advice_server_2_2">联系客服</string>
+    <string translatable="false" name="network_pppoe_msg">已断开</string>
+    <string translatable="false" name="network_pppoe_name">账号</string>
+    <string translatable="false" name="network_pppoe_password">密码</string>
+    <string translatable="false" name="network_speed_caton">卡顿</string>
+    <string translatable="false" name="network_speed_high">高清</string>
+    <string translatable="false" name="network_speed_standard">标清</string>
+    <string translatable="false" name="network_speed_super">超清</string>
+    <string translatable="false" name="network_state_authentic_empty">密码不能为空，请输入密码</string>
+    <string translatable="false" name="network_state_authentic_failed">密码错误，请重新输入密码!</string>
+    <string translatable="false" name="network_state_connected">已连接</string>
+    <string translatable="false" name="network_state_connecting">连接中</string>
+    <string translatable="false" name="network_state_connecting_msg">连接中</string>
+    <string translatable="false" name="network_state_unconnected">未连接</string>
+    <string translatable="false" name="network_state_unknown">未知</string>
+    <string translatable="false" name="network_static_dns1">DNS地址</string>
+    <string translatable="false" name="network_static_dns2">备用DNS</string>
+    <string translatable="false" name="network_static_getway">网关地址</string>
+    <string translatable="false" name="network_static_ip">IP地址</string>
+    <string translatable="false" name="network_static_mask">子网掩码</string>
+    <string translatable="false" name="network_static_mask_length">子网前缀长度</string>
+    <string translatable="false" name="network_staticip_ipv6">IPV6静态IP设置</string>
+    <string translatable="false" name="network_type_auto">DHCP</string>
+    <string translatable="false" name="network_type_dhcp">DHCP</string>
+    <string translatable="false" name="network_type_disconnect">未连接</string>
+    <string translatable="false" name="network_type_ipoe">IPoE/DHCP+</string>
+    <string translatable="false" name="network_type_pppoe">PPPoE</string>
+    <string translatable="false" name="network_type_static_ip">静态IP</string>
+    <string translatable="false" name="network_wlan_ap_config_failed">无线热点配置失败</string>
+    <string translatable="false" name="network_wlan_ap_config_success">无线热点已开启</string>
+    <string translatable="false" name="network_wlan_ap_pwd_notice">密码至少应包含8个字符且不多于16个字符，请重新输入</string>
+    <string translatable="false" name="network_wlan_ap_pwd_notice_not_null">密码不能为空</string>
+    <string translatable="false" name="network_wlan_ap_shutdown_failed">无线热点配置失败</string>
+    <string translatable="false" name="network_wlan_ap_shutdown_success">无线热点关闭成功</string>
+    <string translatable="false" name="network_wlan_ap_ssid_not_null">SSID不能为空</string>
+    <string translatable="false" name="network_wlan_ap_ssid_notice">SSID至少应包含8个字符且不多于32个字符，请重新输入</string>
+    <string translatable="false" name="optimize_advice">优化建议</string>
+    <string translatable="false" name="pair_password">密匙为：</string>
+    <string translatable="false" name="pair_password_one">配对，</string>
+    <string translatable="false" name="password_disable_is_null">密码不能为空！</string>
+    <string translatable="false" name="password_empty_please_input">密码不能为空，请输入密码</string>
+    <string translatable="false" name="password_fail_password_least_eight">密码错误，密码长度不能少于8位</string>
+    <string translatable="false" name="password_fail_password_more_32">密码错误，密码长度不能多于32位</string>
+    <string translatable="false" name="password_fail_please_password">密码错误，请输入5位密码</string>
+    <string translatable="false" name="password_no_phone">你输入的不是手机号码</string>
+    <string translatable="false" name="pppoe_connect">连接</string>
+    <string translatable="false" name="pppoe_connect_fail">9999，PPPoE拨号错误</string>
+    <string translatable="false" name="pppoe_is_connect">PPPoE已连接！</string>
+    <string translatable="false" name="product_type">产品型号</string>
+    <string translatable="false" name="pwd_input">请输入密码</string>
+    <string translatable="false" name="scan_wechat">微信扫一扫联系云客服</string>
+    <string translatable="false" name="service_frame_version">应用服务框架版本</string>
+    <string translatable="false" name="service_frame_version_detaile">版本信息</string>
+    <string translatable="false" name="service_type">认证信息</string>
+    <string translatable="false" name="service_type_address">认证地址</string>
+    <string translatable="false" name="service_type_chooice">切换业务类型</string>
+    <string translatable="false" name="service_type_name">认证账户</string>
+    <string translatable="false" name="service_type_product_name">业务类型</string>
+    <string translatable="false" name="servicer_hint">拨打客服电话</string>
+    <string translatable="false" name="servicer_number">400-923-7171</string>
+    <string translatable="false" name="setting_anent">关 于</string>
+    <string translatable="false" name="setting_bluetooth">蓝牙</string>
+    <string translatable="false" name="setting_bluetooth_and_peripherals">蓝牙设置</string>
+    <string translatable="false" name="setting_bluetooth_connected">配对成功</string>
+    <string translatable="false" name="setting_bluetooth_device">蓝牙设备</string>
+    <string translatable="false" name="setting_bluetooth_match">配对</string>
+    <string translatable="false" name="setting_bluetooth_remote_controller">蓝牙遥控器</string>
+    <string translatable="false" name="setting_bluetooth_search">搜索设备</string>
+    <string translatable="false" name="setting_bluetooth_search_device">搜索到的设备</string>
+    <string translatable="false" name="setting_bluetooth_unmatch">取消</string>
+    <string translatable="false" name="setting_close">关闭</string>
+    <string translatable="false" name="setting_currency">通 用</string>
+    <string translatable="false" name="setting_currency_cec">CEC待机</string>
+    <string translatable="false" name="setting_currency_energy">节能</string>
+    <string translatable="false" name="setting_currency_restore">恢复出厂设置</string>
+    <string translatable="false" name="setting_currency_saloon">客厅里的电视</string>
+    <string translatable="false" name="setting_currency_start_diagnose">启动诊断</string>
+    <string translatable="false" name="setting_currency_start_firstguide">启动向导</string>
+    <string translatable="false" name="setting_device_name">设备名称</string>
+    <string translatable="false" name="setting_dlna">互动服务</string>
+    <string translatable="false" name="setting_figure">图像和声音</string>
+    <string translatable="false" name="setting_figure_location">图像大小</string>
+    <string translatable="false" name="setting_figure_player">播放设置</string>
+    <string translatable="false" name="setting_figure_resolving">分辨率设置</string>
+    <string translatable="false" name="setting_figure_setting">图像设置</string>
+    <string translatable="false" name="setting_figure_sysvolume">声音设置</string>
+    <string translatable="false" name="setting_figure_volume">按键音</string>
+    <string translatable="false" name="setting_hdmi_volume">HDMI透传</string>
+    <string translatable="false" name="setting_net">网 络</string>
+    <string translatable="false" name="setting_net_IPv4">IPv4网络</string>
+    <string translatable="false" name="setting_net_IPv6">IPv6网络</string>
+    <string translatable="false" name="setting_net_ap">热点连接</string>
+    <string translatable="false" name="setting_net_auto">自动连接</string>
+    <string translatable="false" name="setting_net_change">无线和网络</string>
+    <string translatable="false" name="setting_net_communication">移动通信网络</string>
+    <string translatable="false" name="setting_net_communication_title">通信</string>
+    <string translatable="false" name="setting_net_detec">检测</string>
+    <string translatable="false" name="setting_net_detection">网络检测</string>
+    <string translatable="false" name="setting_net_dhcp">有线网络</string>
+    <string translatable="false" name="setting_net_diagnose">设备诊断</string>
+    <string translatable="false" name="setting_net_diagnose_guide">业务诊断</string>
+    <string translatable="false" name="setting_net_diagnose_terminal">终端诊断</string>
+    <string translatable="false" name="setting_net_eth">DHCP</string>
+    <string translatable="false" name="setting_net_ipoe">IPoE/DHCP+</string>
+    <string translatable="false" name="setting_net_ipoe_connect">IPoE/DHCP+连接</string>
+    <string translatable="false" name="setting_net_ipv4">IPv4网络</string>
+    <string translatable="false" name="setting_net_ipv6">IPv6网络</string>
+    <string translatable="false" name="setting_net_link_down">网线未连接</string>
+    <string translatable="false" name="setting_net_no_getip">无法获取IP地址，请检查网络</string>
+    <string translatable="false" name="setting_net_pppoe">PPPoE</string>
+    <string translatable="false" name="setting_net_pppoe_connect">PPPoE连接</string>
+    <string translatable="false" name="setting_net_preference">优先选择网络</string>
+    <string translatable="false" name="setting_net_protocol">网络协议</string>
+    <string translatable="false" name="setting_net_route">配置</string>
+    <string translatable="false" name="setting_net_route_setting">网络设置</string>
+    <string translatable="false" name="setting_net_static_ip">静态IP</string>
+    <string translatable="false" name="setting_net_static_ipoe">IPoE/DHCP+</string>
+    <string translatable="false" name="setting_net_static_ipv4">静态IPv4</string>
+    <string translatable="false" name="setting_net_static_ipv6">静态IPv6</string>
+    <string translatable="false" name="setting_net_title_ipv4">IPv4</string>
+    <string translatable="false" name="setting_net_title_ipv6">IPv6</string>
+    <string translatable="false" name="setting_net_velo">网络测速</string>
+    <string translatable="false" name="setting_net_wifi">无线网络</string>
+    <string translatable="false" name="setting_net_wifi2">WiFi</string>
+    <string translatable="false" name="setting_net_wifi_state_fail">无线网络物理故障</string>
+    <string translatable="false" name="setting_no_bluetooth_hint">请检查是否连接蓝牙接收设备</string>
+    <string translatable="false" name="setting_not_find_diagnose_app">系统未集成诊断应用</string>
+    <string translatable="false" name="setting_not_find_target_app">系统未集成目标应用</string>
+    <string translatable="false" name="setting_open">开启</string>
+    <string translatable="false" name="setting_other">快捷助手</string>
+    <string translatable="false" name="setting_passthrough">声音透传</string>
+    <string translatable="false" name="setting_password_sure">确定</string>
+    <string translatable="false" name="setting_player_quality">清晰度设置</string>
+    <string translatable="false" name="setting_pwd_protect">密码保护</string>
+    <string translatable="false" name="setting_quality_auto">自动切换</string>
+    <string translatable="false" name="setting_quality_clarity">清晰度优先</string>
+    <string translatable="false" name="setting_quality_smooth">流畅优先</string>
+    <string translatable="false" name="setting_ratio_adaptive">自适应</string>
+    <string translatable="false" name="setting_ratio_full">拉伸全屏</string>
+    <string translatable="false" name="setting_restore_empty">密码不能为空，请输入密码</string>
+    <string translatable="false" name="setting_restore_error">密码错误，请重新输入</string>
+    <string translatable="false" name="setting_restore_ok">重置机顶盒</string>
+    <string translatable="false" name="setting_restore_ok_msg">按确认键使用输入法</string>
+    <string translatable="false" name="setting_safetry">安 全</string>
+    <string translatable="false" name="setting_screen_ratio">画面比例设置</string>
+    <string translatable="false" name="setting_spdf_volume">SPDIF透传</string>
+    <string translatable="false" name="setting_system_setting">系统</string>
+    <string translatable="false" name="setting_upgrade">升 级</string>
+    <string translatable="false" name="startapp_filed">启动应用失败</string>
+    <string translatable="false" name="static_ip_config_success">静态ip连接成功</string>
+    <string translatable="false" name="system_address">升级地址</string>
+    <string translatable="false" name="system_auto_sleep_back">返回</string>
+    <string translatable="false" name="system_auto_sleep_cancel">取消</string>
+    <string translatable="false" name="system_auto_sleep_save">保存</string>
+    <string translatable="false" name="system_delay_time_show">系统延时启动时间</string>
+    <string translatable="false" name="system_disable_wifi">是否启用WiFi功能</string>
+    <string translatable="false" name="system_sleep_show">自动待机提醒时间</string>
+    <string translatable="false" name="system_upgrade">系统升级</string>
+    <string translatable="false" name="system_version">软件版本</string>
+    <string translatable="false" name="task_affinity_setting_other">com.shcmcc.setting.activity.other</string>
+    <string translatable="false" name="total_disk_memory">共</string>
+    <string translatable="false" name="tv_change1">客厅的魔百和</string>
+    <string translatable="false" name="tv_change2">主卧的魔百和</string>
+    <string translatable="false" name="tv_change3">次卧的魔百和</string>
+    <string translatable="false" name="tv_change4">书房的魔百和</string>
+    <string translatable="false" name="tv_change_name">设备名称</string>
+    <string translatable="false" name="tv_restory_text">"执行恢复出厂设置，将删除已安装的应用，
+清除本地数据。"</string>
+    <string translatable="false" name="tv_restory_title">确定要恢复出厂设置吗?</string>
+    <string translatable="false" name="username_and_password_disable_is_null">账号和密码不能为空</string>
+    <string translatable="false" name="username_disable_is_null">账号不能为空！</string>
+    <string translatable="false" name="version_new_noneed_upgrade">已经是最新版本，无需升级！</string>
+    <string translatable="false" name="wan_mac_address">有线MAC地址</string>
+    <string translatable="false" name="wifi_address">IP地址</string>
+    <string translatable="false" name="wifi_cancel">忽略此网络</string>
+    <string translatable="false" name="wifi_cmcc_auto_desc">请发送KTMCTX到10086开通业务。如您忘记密码，请发送短信“CZWLANMM”到10086重置密码或者通过动态密码进行登录。</string>
+    <string translatable="false" name="wifi_connect">连接</string>
+    <string translatable="false" name="wifi_connected">已连接</string>
+    <string translatable="false" name="wifi_connecting">连接中</string>
+    <string translatable="false" name="wifi_disabled">禁用</string>
+    <string translatable="false" name="wifi_disabled_generic">禁用</string>
+    <string translatable="false" name="wifi_disabled_network_failure">避免连接信号弱的互联网</string>
+    <string translatable="false" name="wifi_disabled_password_failure">身份验证失败</string>
+    <string translatable="false" name="wifi_disconnect">断开</string>
+    <string translatable="false" name="wifi_dns_server">DNS服务器</string>
+    <string translatable="false" name="wifi_eap_anonymous">匿名身份</string>
+    <string translatable="false" name="wifi_eap_ca_cert">CA证书</string>
+    <string translatable="false" name="wifi_eap_identity">身份</string>
+    <string translatable="false" name="wifi_eap_user_cert">用户证书</string>
+    <string translatable="false" name="wifi_fail_to_scan">无法扫描网络</string>
+    <string translatable="false" name="wifi_fast_connect">快速接入</string>
+    <string translatable="false" name="wifi_forget">忘记</string>
+    <string translatable="false" name="wifi_getway">默认网关</string>
+    <string translatable="false" name="wifi_ip_address">IP地址</string>
+    <string translatable="false" name="wifi_mac_address">无线MAC地址</string>
+    <string translatable="false" name="wifi_manual_operation">手动设置</string>
+    <string translatable="false" name="wifi_mask">子网掩码</string>
+    <string translatable="false" name="wifi_message_ipv4">无线IPv4网络信息</string>
+    <string translatable="false" name="wifi_message_ipv6">无线IPv6网络信息</string>
+    <string translatable="false" name="wifi_message_no_exist">0.0.0.0</string>
+    <string translatable="false" name="wifi_mobileno">手机号</string>
+    <string translatable="false" name="wifi_not_in_range">不在范围</string>
+    <string translatable="false" name="wifi_open_status">开放的</string>
+    <string translatable="false" name="wifi_password">密        码</string>
+    <string translatable="false" name="wifi_password_connect">密码</string>
+    <string translatable="false" name="wifi_remembered">已保存</string>
+    <string translatable="false" name="wifi_save">保存</string>
+    <string translatable="false" name="wifi_secure">安全</string>
+    <string translatable="false" name="wifi_secured">固定 %1$s</string>
+    <string translatable="false" name="wifi_secured_first_item">通过 %1$s进行保护</string>
+    <string translatable="false" name="wifi_secured_second_item">,通过 %1$s进行保护</string>
+    <string translatable="false" name="wifi_secured_with_status">%2$s,获得与 %1$s</string>
+    <string translatable="false" name="wifi_security_eap">802.1x EAP</string>
+    <string translatable="false" name="wifi_security_none">开放的</string>
+    <string translatable="false" name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <string translatable="false" name="wifi_security_short_eap">802.1x</string>
+    <string translatable="false" name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <string translatable="false" name="wifi_security_short_wep">WEP</string>
+    <string translatable="false" name="wifi_security_short_wpa">WPA</string>
+    <string translatable="false" name="wifi_security_short_wpa2">WPA2</string>
+    <string translatable="false" name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <string translatable="false" name="wifi_security_wep">WEP</string>
+    <string translatable="false" name="wifi_security_wpa">WPA PSK</string>
+    <string translatable="false" name="wifi_security_wpa2">WPA2 PSK</string>
+    <string translatable="false" name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <string translatable="false" name="wifi_show_password">显示密码</string>
+    <string translatable="false" name="wifi_status">状态</string>
+    <string translatable="false" name="wifi_strength">强度</string>
+    <string translatable="false" name="wifi_unchanged">(不变)</string>
+    <string translatable="false" name="wifi_unspecified">(不明)</string>
+    <string translatable="false" name="wifi_wps_available_first_item">受保护的可用网络</string>
+    <string translatable="false" name="wifi_wps_available_second_item">" (受保护的可用网络)"</string>
+<!--    <string translatable="false" name="app_name">Settings</string>-->
+    <string name="setting" tools:ignore="MissingTranslation">| 设置</string>
+    <string name="basic">网络设置</string>
+    <string name="basic_eth_setting_title">设置 > 基本设置 > 有线连接</string>
+    <string name="advanced">高级设置</string>
+    <string name="sysinfo">系统信息</string>
+    <string name="itv">ITV设置</string>
+    <string name="recovery">恢复出厂</string>
+    <string name="more">更多设置</string>
+    <string name="passdialog_title">系统密码</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="pw_emp">密码不能为空！</string>
+    <string name="pw_err">密码错误！</string>
+    <string name="start_err">启动应用失败！</string>
+    <string name="basic_title">设置 > 基本设置</string>
+    <string name="eth">有线连接</string>
+    <string name="enable">已启用</string>
+    <string name="disabled">未启用</string>
+    <string name="wifiap">Wi-Fi热点</string>
+    <string name="ip">&#160;&#160;&#160;&#160;&#160;IP地址 :</string>
+    <string name="mask">子网掩码 :</string>
+    <string name="gate">网关 :</string>
+    <string name="dns1">主DNS :</string>
+    <string name="dns2">备DNS :</string>
+    <string name="Hotspot_ssid">热点SSID :</string>
+    <string name="Hotspot_password">热点密码 :</string>
+    <string name="advanced_title">设置 > 高级设置</string>
+    <string name="language">语言</string>
+    <string name="chinese">中文(中国)</string>
+    <string name="america">英文(美国)</string>
+
+    <string name="resolution">分辨率</string>
+    <string name="self">自适应</string>
+    <string name="scaling">画面缩放</string>
+    <string name="adjust_screen">调整屏幕缩放比例</string>
+    <string name="ratio">视频输出比例</string>
+    <string name="full_screen">全屏</string>
+    <string name="audio">数字音频输出</string>
+    <string name="pcm">解码</string>
+    <string name="full">全屏</string>
+    <string name="ratio_self">自适应</string>
+    <string name="four_three">4:3</string>
+    <string name="sixteen_nine">16:9</string>
+    <string name="audio_self">自适应</string>
+    <string name="audio_pcm">解码</string>
+    <string name="audio_raw">透传</string>
+    <string name="resolution_title">设置 > 高级设置 > 分辨率</string>
+    <string name="dialog_hint">提示</string>
+    <string name="language_title">设置 > 高级设置 > 语言</string>
+    <string name="toast_already_set">当前语言已为: </string>
+    <string name="scaling_tips1">按确认键切换焦点</string>
+    <string name="scaling_tips2_left">按左右方向键调整左边距</string>
+    <string name="scaling_tips2_right">按左右方向键调整右边距</string>
+    <string name="scaling_tips2_up">按上下方向键调整上边距</string>
+    <string name="scaling_tips2_down">按上下方向键调整下边距</string>
+    <string name="scaling_tips3">按返回键保存</string>
+    <string name="ratio_title">设置 > 高级设置 > 视频输出比例</string>
+    <string name="toast_already_set_ratio">当前输出比例已为: </string>
+    <string name="audio_title">设置 > 高级设置 > 数字音频输出</string>
+    <string name="toast_already_set_audio">当前数字音频输出已为: </string>
+    <string name="spdif">SPDIF透传</string>
+    <string name="hdmi">透传</string>
+
+    <!--系统信息-->
+    <string name="system_info">设置 > 系统信息</string>
+    <string name="tv_modle_value">设备信息</string>
+    <string name="tv_ver_info">版本信息</string>
+    <string name="internet_info">网络信息</string>
+    <string name="stb_diagnose">机顶盒诊断</string>
+    <string name="tv_manufactures">厂家名称:</string>
+    <string name="unit_type">设备型号:</string>
+    <string name="stb_id">序列号:</string>
+    <string name="mac_address">MAC地址:</string>
+    <string name="hardware_ver">硬件版本:</string>
+    <string name="software_ver">软件版本:</string>
+    <string name="serial_number">序列号:</string>
+    <string name="release_ver_time">软件发布时间:</string>
+    <string name="attended_mode">连接方式:</string>
+    <string name="access_mode">连入方式:</string>
+    <string name="subnet">子网掩码:</string>
+    <string name="network_management_address">网管服务器地址:</string>
+    <string name="network_management_addressv6">网管服务器V6地址:</string>
+    <string name="major_ntp">主时间同步服务器地址:</string>
+    <string name="standby_ntp">备时间同步服务器地址:</string>
+    <string name="update_ntp">更新服务器地址:</string>
+    <string name="authentication_ntp">主认证服务器地址:</string>
+    <string name="authentication_ntp2">备认证服务器地址:</string>
+
+
+    <string name="ntp_info">服务器信息</string>
+    <string name="ntp_setting">时间服务器设置</string>
+    <string name="ntp1">主时间同步服务器地址</string>
+    <string name="ntp2">备时间同步服务器地址</string>
+
+    <!--其他设置-->
+    <string name="other_setting">其他设置</string>
+    <string name="more_settings">更多设置</string>
+    <string name="settings_more">设置 > 更多设置</string>
+    <string name="settings_time_date">设置 > 更多设置 > 时间与日期</string>
+    <string name="time_date">时间与日期</string>
+    <string name="automatic_standby">自动待机</string>
+    <string name="network_management">网管参数</string>
+    <string name="automatic_time">自动确定时间和日期</string>
+    <string name="automatic_timezone">自动确定时区</string>
+    <string name="date_format24">使用24小时格式</string>
+    <string name="use_network_time">使用网络提供的时间</string>
+    <string name="system_update">系统升级</string>
+    <string name="auto_shutdown">自动关机</string>
+    <string name="time_setting">时间设置</string>
+    <string name="setTime_Date">设置时间和日期</string>
+    <string name="is24Hour">使用24小时格式</string>
+    <string name="choose_time_format">选择日期格式</string>
+
+    <string name="settings_automatic_standby">设置 > 更多设置 > 自动待机</string>
+    <string name="standby30">30 分钟</string>
+    <string name="standby1">1 小时</string>
+    <string name="standby2">2 小时</string>
+    <string name="standby4">4 小时</string>
+    <string name="standby10">10 小时</string>
+    <string name="standby_never">永不超时</string>
+
+    <string name="settings_network_manager_parameters">设置 > 更多设置 > 网管参数</string>
+    <string name="nmp_address">网管地址</string>
+    <string name="nmp_heart">心跳周期</string>
+    <string name="nmp_cpe_user">CPE用户</string>
+    <string name="nmp_cpe_passage">CPE密码</string>
+    <string name="nmp_user">网管账户</string>
+    <string name="nmp_passage">网管密码</string>
+
+    <string name="settings_shutdown">设置 > 更多设置 > 自动关机</string>
+    <string name="shutdown">自动关机</string>
+    <string name="never">从不</string>
+
+    <string name="settings_systemupdate">设置 > 更多设置 > 系统升级</string>
+    <string name="net_update">网络升级</string>
+    <string name="update_toast">当前版本已是最新版本，无需更新</string>
+    <string name="check_update_toast">正在检测升级信息,请稍后...</string>
+
+    <string name="settings_update_net">设置 > 更多设置 > 系统升级 > 网络升级</string>
+    <string name="button_update_net">检测升级</string>
+    <string name="current_version">当前版本：</string>
+    <string name="upgrade_version">升级版本：</string>
+
+    <string name="worning">夜深了，请注意休息</string>
+    <string name="worning1">机顶盒将于</string>
+    <string name="worning2">秒后自动关机</string>
+
+    <string name="diagnostic_text">机顶盒诊断</string>
+    <string name="diagnostic">诊断</string>
+    <string name="settings_diagnostic">终端诊断</string>
+    <string name="stbid">序列号: </string>
+    <string name="net_diagnostic">网络诊断</string>
+    <string name="net_info">网络信息</string>
+    <string name="essential_info">基本信息</string>
+    <string name="startup_diagnostic">开机诊断</string>
+    <string name="get_account">账号获取</string>
+    <string name="account_auth">账号认证</string>
+    <string name="business_certification">业务认证</string>
+    <string name="jk">家宽测速</string>
+    <string name="video_test">视频测速</string>
+    <string name="service_test">流服务测试</string>
+    <string name="diagnosticing">进行诊断</string>
+    <string name="deepdiagnostic">深度诊断</string>
+    <string name="back">返回</string>
+    <string name="model">设备型号: </string>
+    <string name="steam_err">测速异常</string>
+
+    <string name="manual_detection_upgrade">检测升级</string>
+
+    <!--需要添加一样的英文string-->
+    <string name="hw">硬件版本: </string>
+    <string name="sw">软件版本: </string>
+    <string name="net_result">网络诊断: </string>
+    <string name="net_access_mode">接入方式: </string>
+    <string name="ipv4_ip">IPv4 地址: </string>
+    <string name="ipv4_gw">IPv4 网关: </string>
+    <string name="ipv4_dns">IPv4 DNS: </string>
+    <string name="ipv6_ip_diag">IPv6 地址: </string>
+    <string name="ipv6_gw">IPv6 网关: </string>
+    <string name="ipv6_dns">IPv6 DNS: </string>
+    <string name="ntp">NTP 地址: </string>
+    <string name="ntp_time_diag">NTP 时间:</string>
+    <string name="v4_public_ip">IPv4公网地址:</string>
+    <string name="v4_public_ip_province">IPv4地址归属:</string>
+    <string name="access_mode_cable">网线</string>
+    <string name="access_mode_wifi">无线</string>
+    <string name="access_mode_null">无网络接入</string>
+
+    <string name="tmc_url">TMC域名:</string>
+    <string name="tmc_v4_ip">TMCv4地址:</string>
+    <string name="tmc_v6_ip">TMCv6地址:</string>
+    <string name="tmu_v4_ip">TMUv4地址:</string>
+    <string name="tmu_v6_ip">TMUv6地址:</string>
+    <string name="auth_username">用户名:</string>
+    <string name="auth_password">密码:</string>
+    <string name="eds_url">EDS域名:</string>
+    <string name="eds_ip">EDS地址:</string>
+    <string name="vsc_ip">VSC地址:</string>
+    <string name="auth_result_diag">认证结果:</string>
+    <string name="auth_result_diag_true">成功</string>
+    <string name="auth_result_diag_false">失败</string>
+    <string name="steam_speed_url">测速链接：</string>
+    <string name="steam_speed_url_err">直播节目清单异常</string>
+    <string name="steam_speed_ip">调度地址：</string>
+    <string name="steam_speed">下载速率：</string>
+    <string name="jk_ip">测速地址：</string>
+
+    <string name="ping_v4_gw">IPv4网关 ping测:</string>
+    <string name="ping_v4_dns">IPv4DNS ping测:</string>
+    <string name="ping_v6_gw">IPv6网关ping测:</string>
+    <string name="ping_v6_dns">IPv6DNS ping测:</string>
+    <string name="ping_CDN">CDNping测:</string>
+
+
+
+    <string name="do_diagnosticing">运行诊断</string>
+    <string name="do_diag_back">返回上级</string>
+
+    <string name="net_result_ok">成功</string>
+    <string name="net_result_fail">失败</string>
+    <string name="net_result_tips">诊断需耗时五分钟，请耐心等待...</string>
+    <string name="ip_net">局域网IP：</string>
+    <string name="dns">DNS: </string>
+    <string name="ntp_time">NTP时间: </string>
+    <string name="ntp_serv">NTP服务器: </string>
+    <string name="boot_result">开机认证: </string>
+    <string name="public_ip">公网IP地址: </string>
+    <string name="auth_ip">认证域名解析: </string>
+    <string name="user_id">用户名: </string>
+    <string name="user_name">用户标识: </string>
+    <string name="auth_result">LUNCH启动: </string>
+    <string name="auth_addr">新媒体认证地址: </string>
+    <string name="epg_addr">EPG服务器地址: </string>
+    <string name="steam_result">调度访问: </string>
+    <string name="steam_process">调度到: </string>
+    <string name="steam_url">测速地址: </string>
+
+    <string name="steam_addr">直播节目清单异常</string>
+
+    <string name="tmc_auth">TMC域名: </string>
+    <string name="tmc_addr">TMC解析地址:</string>
+    <string name="eds_result">EDS域名:</string>
+    <string name="eds_addr">EDS解析地址:</string>
+    <string name="auth_result1">认证结果:</string>
+
+    <string name="net_deep">网络深度诊断</string>
+    <string name="auth_deep">业务深度诊断</string>
+    <string name="start">开始</string>
+    <string name="from">来自</string>
+    <string name="seq">已发送次数</string>
+    <string name="time">时间</string>
+    <string name="transmitted">个包已发送</string>
+    <string name="received">个包已接收</string>
+    <string name="loss">丢失率</string>
+    <string name="rtt">最小延时/平均延时/最大延时/抖动值</string>
+    <string name="statistics">统计数据</string>
+    <string name="unreachable">主机不能到达</string>
+    <string name="err">个错误</string>
+
+    <string name="settings_itv">设置 > ITV设置</string>
+    <string name="auth_mian_addr">主认证地址 : </string>
+    <string name="auth_bak_addr">备认证地址 : </string>
+    <string name="auth_name">业务账号 : </string>
+    <string name="auth_pwd">业务密码 : </string>
+    <string name="settings_recovery">设置 > 恢复出厂设置</string>
+    <string name="btn_recovery">恢复默认设置</string>
+    <string name="recovery_tips">此操作会清除机顶盒内存设备中的所有数据，包括：
+    \n·系统与应用程序的数据和设置
+    \n·下载的应用程序
+    \n
+    \n不会删除 :
+    \n·当前系统软件和捆绑的应用程序
+    \n·文件，如音乐或照片</string>
+
+    <string name="settings">设置</string>
+    <string name="eth_connect">有线连接</string>
+    <string name="wifi_ap">Wi-Fi 热点</string>
+    <string name="ipv6_connect">IPv6 网络</string>
+    <string name="eth_disable">未启用</string>
+    <string name="ip_address">IP 地址 :</string>
+    <string name="subnet_mask">子网掩码 :</string>
+    <string name="gateway">局域网网关 :</string>
+    <string name="wifiAP_ssid">热点 SSID :</string>
+    <string name="wifiAP_psk">热点密码 :</string>
+    <string name="default_addr">0.0.0.0</string>
+
+    <string name="eth_dhcp">DHCP</string>
+    <string name="eth_ipoe">IPOE</string>
+    <string name="eth_pppoe">PPPoE</string>
+    <string name="eth_manual">静态 IP</string>
+    <string name="eth_dhcp_explain">自动获取 IP 地址</string>
+    <string name="eth_ipoe_explain">需要认证的 DHCP</string>
+    <string name="eth_pppoe_explain">宽带拨号获取 IP 地址</string>
+    <string name="eth_manual_explain">手动输入 IP 地址</string>
+
+    <string name="eth_dhcp_connect_ok">DHCP连接成功</string>
+    <string name="eth_dhcp_connect_failed">DHCP连接失败</string>
+    <string name="eth_ipoe_connect_ok">IPOE连接成功</string>
+    <string name="eth_ipoe_connect_failed">IPOE连接失败</string>
+    <string name="eth_pppoe_connect_ok">PPPOE连接成功</string>
+    <string name="eth_pppoe_connect_failed">PPPOE连接失败</string>
+    <string name="eth_manual_connect_ok">静态IP连接成功</string>
+    <string name="eth_manual_connect_failed">静态IP连接失败</string>
+    <string name="eth_connecting">正在连接请稍后...</string>
+    <string name="eth_connected">已连接</string>
+
+    <string name="eth_dhcp_title">设置 > 基本设置 > 有线连接 > DHCP</string>
+
+    <string name="eth_ipoe_title">设置 > 基本设置 > 有线连接 > IPOE</string>
+    <string name="eth_ipoe_login">账号</string>
+    <string name="eth_ipoe_pwd">密码</string>
+    <string name="btn_confirm">确定</string>
+    <string name="eth_ipoe_warn">用户名或密码不能为空</string>
+
+    <string name="eth_pppoe_title">设置 > 基本设置 > 有线连接 > PPPoE</string>
+
+    <string name="eth_manual_title">设置 > 基本设置 > 有线连接 > 静态IP</string>
+    <string name="eth_no_cable">网线脱落</string>
+    <string name="eth_manual_ip_error">IP不合法</string>
+    <string name="eth_manual_mask_error">子网掩码不合法</string>
+    <string name="eth_manual_gateway_error">网关不合法</string>
+    <string name="eth_manual_dns1_error">DNS1不合法</string>
+    <string name="eth_manual_dns2_error">DNS2不合法</string>
+    <string name="eth_manual_ip_null">IP不能为空</string>
+    <string name="eth_manual_mask_null">子网掩码不能为空</string>
+    <string name="eth_manual_gateway_null">网关不能为空</string>
+    <string name="eth_manual_dns1_null">DNS1不能为空</string>
+
+    <string name="eth_ap_title">设置 > 基本设置 > WiFi 热点</string>
+    <string name="eth_ap_ssid">SSID</string>
+    <string name="eth_ap_pwd">密码</string>
+    <string name="eth_ap_security">安全性</string>
+    <string name="eth_ap_confirm">确定</string>
+    <string name="eth_ap_cancel">取消</string>
+    <string name="eth_ap_no_protect">无</string>
+    <string name="eth_ap_no_wpa">WPA PSK</string>
+    <string name="eth_ap_no_wpa2">WPA2 PSK</string>
+    <string name="eth_ap_opening">正在开启热点...</string>
+    <string name="eth_ap_closing">正在关闭热点...</string>
+    <string name="eth_ap_close_wifi">请先关闭WiFi</string>
+    <string name="eth_ap_ssid_null">SSID不能为空</string>
+    <string name="eth_ap_pwd_null">密码不能为空</string>
+    <string name="eth_ap_is_setting">正在设置热点...</string>
+    <string name="eth_ap_set_success">无线热点配置成功</string>
+
+    <string name="eth_ipv6_title">设置 > 基本设置 > IPv6 网络</string>
+    <string name="eth_ipv6_net_info">IPv6 网络信息</string>
+    <string name="eth_ipv6_net_info_explain">点击查看 IPv6 网络信息</string>
+    <string name="eth_ipv6_dhcp">DHCP</string>
+    <string name="eth_ipv6_stateless">Ethernet Stateless</string>
+    <string name="eth_ipv6_manual">Static IP</string>
+    <string name="eth_ipv6_connected">已连接</string>
+    <string name="eth_ipv6_connecting">正在连接请稍后...</string>
+    <string name="eth_ipv6_connect_success">连接成功</string>
+    <string name="eth_ipv6_connect_failed">连接失败</string>
+    <string name="eth_ipv6_enabled">IPv6功能已开启</string>
+    <string name="eth_ipv6_disable">IPv6功能已关闭</string>
+
+    <string name="eth_ipv6_manual_title">设置 > 基本设置 > IPv6 网络 > Static IP</string>
+    <string name="eth_ipv6_ip">IP地址</string>
+    <string name="eth_ipv6_gateway">网关</string>
+    <string name="eth_ipv6_dns1">DNS1</string>
+    <string name="eth_ipv6_dns2">DNS2</string>
+    <string name="eth_ipv6_prefix">前缀长度 :</string>
+    <string name="eth_pppoe_connecting">PPPoE已经在努力尝试连接中，请不要频繁请求...</string>
+    <string name="eth_pppoe_connected">PPPoE网络使用此账号已经成功连接，不用重新连接</string>
+    <string name="eth_wifi_title">设置 > 基本设置 > 无线连接</string>
+    <string name="wifi_security">安全性:</string>
+    <string name="wifi_sigal_strength">信号强弱:</string>
+    <string name="wifi_dialog_pass">密码:</string>
+<!--    <string name="wifi_show_password">显示密码</string>-->
+    <string name="wifi_cut">断开</string>
+<!--    <string name="wifi_connect">连接</string>-->
+    <string name="wifi_key">无线连接</string>
+    <string name="wifi_connect_state">连接状态:</string>
+    <string name="wifi_ip_add">IP地址:</string>
+    <string name="wifi_forget_pass">取消保存</string>
+    <string name="wifi_signal">信号强度:</string>
+<!--    <string name="wifi_status">状态</string>-->
+    <string name="wifi_enabling">正在启用...</string>
+    <string name="wifi_disabling">正在关闭...</string>
+<!--    <string name="wifi_connecting">正在连接...</string>-->
+    <string name="wifi_disconnecting">正在断开连接...</string>
+<!--    <string name="wifi_connected">连接成功</string>-->
+    <string name="wifi_pwd_error">Wi-Fi密码错误</string>
+    <string name="wifi_via_wpa_psk">通过WPA进行保护</string>
+    <string name="wifi_via_wpa2_psk">通过WPA2进行保护</string>
+    <string name="wifi_via_wpa_wpa2_psk">通过WPA/WPA2进行保护</string>
+    <string name="wifi_none">无</string>
+
+    <string name="ap_client_wifi_ap_dhcp">DHCP</string>
+    <string name="ap_client_wifi_ap_static">静态IP</string>
+    <string name="tv_route_ap_client_access_way">接入方式:</string>
+    <string name="network_wifi_ssid_tip">密码不能为空</string>
+    <string name="input_password_length">密码长度不能少于8</string>
+    <string name="network_ip_getway_not_segment">IP和网关不在一个网段</string>
+    <string name="check_info">输入信息有误，请检查！</string>
+    <string name="cant_empty">输入信息不能为空！</string>
+    <string name="network_ip_mask_not_segment">请检查IP和子网掩码</string>
+    <string name="wifipassword_infomation1">您正在进入WIFI功能设置，为了您的安全，请输入密码：</string>
+    <string name="wifipassword_infomation2">您正在修改WIFI功能设置，为了您的安全，请输入生效校验密码(1/2)：</string>
+    <string name="wifipassword_infomation3">您正在修改WIFI功能设置，为了您的安全，请输入生效校验密码(2/2)：</string>
+    <string name="information">信息</string>
+
+    <string name="stack_ipv4">IPv4</string>
+    <string name="stack_ipv6">IPv6</string>
+    <string name="stack_ipv4_6">IPv4+IPv6</string>
+    <string name="eth_stack_title">单栈双栈选择</string>
+    <string name="pppoe_title">PPPoE 账号密码</string>
+    <string name="dhcp_title">DHCP连接</string>
+    <string name="ipv6_option_title">IPv6 选项</string>
+    <string name="ipv6_state">有状态</string>
+    <string name="ipv6_stateless">无状态</string>
+    <string name="ipoe_option_args">Option参数</string>
+
+    <string name="ipv4_connect_success">IPv4连接成功</string>
+    <string name="ipv4_connect_failed">IPv4连接失败</string>
+    <string name="ipv6_connect_success">IPv6连接成功</string>
+    <string name="ipv6_connect_failed">IPv6连接失败</string>
+    <string name="eth_ipv4_info">IPv4 网络信息</string>
+    <string name="eth_ipv6_info">IPv6 网络信息</string>
+
+    <string name="ipv6_ip">地址: </string>
+    <string name="ipv6_gateway">网关: </string>
+<!--&lt;!&ndash;    <string name="ipv6_prefix">掩码长度: </string>&ndash;&gt;    modified-->
+    <string name="ipv6_prefix">子网掩码: </string>
+    <string name="ipv6_dns1">域名1: </string>
+    <string name="ipv6_dns2">域名2: </string>
+
+    <string name="eth_wifi_info">Wi-Fi 网络信息</string>
+    <string name="connecting">正在连接...</string>
+    <string name="connect_failed">连接失败</string>
+    <string name="open3">已设置凌晨三点自动关机</string>
+    <string name="close3">已关闭凌晨三点自动关机</string>
+
+    <string name="nobluetooth">本设备不支持蓝牙!</string>
+    <string name="nobluetoothble">本设备不支持BLE!</string>
+<!--    <string name="bluetooth">蓝牙:</string>-->
+    <string name="canbesearch">可被发现:</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <string name="stopscan">停止扫描</string>
+    <string name="startscan">开始扫描</string>
+    <string name="scaning">扫描中</string>
+    <string name="opening">打开中</string>
+    <string name="pair">点击配对</string>
+    <string name="paired">已配对设备:</string>
+    <string name="usefuldevice">可用设备:</string>
+    <string name="input_opration">确定要取消配对吗？</string>
+    <string name="cancel_bond">确定</string>
+    <string name="connect">取消</string>
+    <string name="bt_connected">已配对</string>
+    <string name="bondingKey">请按下“OK”键与遥控器配对</string>
+
+    <string name="choose_opration">请选择对应操作：</string>
+    <string name="cancelpaired">取消配对</string>
+    <string name="getconnected">连接</string>
+    <string name="bluetooth_setting">设置 > 基本设置 > 蓝牙设置</string>
+    <string name="input_passwd">请输入密码： </string>
+    <string name="password_error">密码错误</string>
+
+    <string name="ipv4_static_set">IPv4 静态网络设置</string>
+    <string name="ipv6_static_set">IPv6 静态网络设置</string>
+    <string name="static_ipv4_ip">IPv4 地址</string>
+    <string name="static_ipv4_gateway">网关</string>
+    <string name="static_ipv4_mask">掩码长度</string>
+    <string name="static_ipv4_dns1">主 DNS</string>
+    <string name="static_ipv4_dns2">备 DNS</string>
+
+    <string name="static_ipv6_ip">IPv6 地址</string>
+    <string name="static_ipv6_gateway">网关</string>
+    <string name="static_ipv6_mask">掩码长度</string>
+    <string name="static_ipv6_dns1">主 DNS</string>
+    <string name="static_ipv6_dns2">备 DNS</string>
+    <string name="eth_dns1_hint">8.8.8.8</string>
+    <string name="eth_dns2_hint">8.8.4.4</string>
+    <string name="eth_dns1_ipv6_hint">::</string>
+    <string name="eth_prefix_length_ipv6_hint">64</string>
+    <string name="eth_prefix_length_ipv4_hint">24</string>
+    <string name="eth_ip_settings_invalid_dns" msgid="8744583948328391047">请输入有效DNS</string>
+    <string name="eth_ip_settings_invalid_ip_address">IP不合法</string>
+    <string name="eth_ip_settings_invalid_mask">掩码长度不合法</string>
+    <string name="eth_ip_settings_invalid_gateway">网关不合法</string>
+    <string name="eth_ip_settings_invalid_dns1">主DNS不合法</string>
+    <string name="eth_ip_settings_invalid_dns2">备DNS不合法</string>
+    <string name="eth_ip_settings_invalid_info4">IPv4 信息填写有误</string>
+    <string name="eth_ip_settings_invalid_info6">IPv6 信息填写有误</string>
+
+    <string name="bluetooth_key">蓝牙连接</string>
+    <string name="connected">已连接</string>
+    <string name="disconnect">未连接</string>
+    <string name="state">状态: </string>
+
+    <string name="settings_dlna">设置 > 更多设置 > DLNA投屏</string>
+    <string name="dlna_key">DLNA投屏</string>
+    <string name="open4">已打开DLNA投屏</string>
+    <string name="close4">已关闭DLNA投屏</string>
+
+    <string name="speed">下载速度 : </string>
+    <string name="toast_auth_deep">业务深度诊断需要耗时3分钟，请耐心等待...</string>
+    <string name="auth_deep_result">业务深度诊断 : </string>
+    <string name="ping_ip">播放地址 : </string>
+    <string name="count">次</string>
+    <string name="start_avg_time">播放开始平均需时 : </string>
+    <string name="all_buffer_count">总卡顿次数 : </string>
+    <string name="all_buffer_time">总卡顿时长 : </string>
+    <string name="buffer_ratio">卡顿时间占比 : </string>
+    <string name="download_success">及时下载成功率 : </string>
+
+    <string name="tip_resolution">确认是否切换到该制式</string>
+    <string name="tip_re2">选择的分辨率为当前分辨率</string>
+    <string name="wifi_conn">WIFI连接</string>
+    <string name="bad_score">您的网速较差可能无法正常使用</string>
+    <string name="normol_score">您的网速可以正常观看除4K外的节目</string>
+    <string name="good_score">您的网速优秀可以正常使用</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

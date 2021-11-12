@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/_50dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_system_version" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/system_version" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_system_address" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/system_address" />-->
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/_350dp">
+        <ProgressBar android:id="@id/activity_upgrade_check_progress" android:visibility="gone" android:layout_width="@dimen/_100dp" android:layout_height="@dimen/_100dp" android:layout_marginTop="@dimen/_60dp" android:layout_centerHorizontal="true" style="@style/progressbar_style1" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/activity_download_content" android:visibility="gone" android:layout_width="@dimen/_1096dp" android:layout_height="@dimen/_124dp" android:layout_marginTop="@dimen/_60dp" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/_34sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:text="已下载" />
+            <com.shcmcc.setting.custonview.SWProgress android:layout_gravity="center_vertical" android:id="@id/activity_download_progress" android:layout_width="@dimen/_730dp" android:layout_height="@dimen/_45dp" android:layout_marginLeft="@dimen/_50dp" android:max="100" android:progress="1" style="@style/CustomProgressBar" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/_42sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/activity_check_update" android:background="@drawable/ic_btn_selector" android:layout_width="@dimen/_280dp" android:layout_height="@dimen/_105dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

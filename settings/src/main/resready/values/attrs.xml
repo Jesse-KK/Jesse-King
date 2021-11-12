@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="language_names">
+        <item>中文 (中国)</item>
+        <item>英文 (美国)</item>
+    </string-array>
+    <string-array name="ratios">
+        <item>全屏</item>
+        <item>4:3</item>
+        <item>16:9</item>
+    </string-array>
+    <string-array name="audios">
+        <item>自适应</item>
+        <item>解码</item>
+        <item>SPDIF透传</item>
+        <item>HDMI透传</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_screen_all" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/_38sp" android:textColor="#ffced2e9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_122dp" android:text="@string/display_position_top" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_screen_image" android:layout_width="@dimen/_715dp" android:layout_height="@dimen/_588dp" android:layout_marginTop="@dimen/_187dp" android:src="@drawable/ic_screen_change" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/_38sp" android:textColor="#ffced2e9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_488dp" android:layout_marginTop="@dimen/_602dp" android:text="@string/display_position_left" />
+    <TextView android:textSize="@dimen/_38sp" android:textColor="#ffced2e9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_1096dp" android:layout_marginTop="@dimen/_602dp" android:text="@string/display_position_right" />
+    <TextView android:textSize="@dimen/_38sp" android:textColor="#ffced2e9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_812dp" android:text="@string/display_position_bottom" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/_38sp" android:textColor="#ffced2e9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_960dp" android:text="@string/display_position_detail" android:layout_centerHorizontal="true" />
+</RelativeLayout>

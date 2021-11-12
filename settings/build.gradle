@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    defaultConfig {
+        applicationId "com.changhong.settings"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 210830
+        versionName "0.0.6"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    signingConfigs {
+        release {
+            storeFile file("D:\\test.jks")
+            storePassword '123456'
+            keyAlias 'ch'
+            keyPassword '123456'
+        }
+
+        debug {
+            storeFile file("D:\\test.jks")
+            storePassword '123456'
+            keyAlias 'ch'
+            keyPassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "CH_Setting_HaiNan_HiSi_${variant.versionName}.apk"
+            }
+        }
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+
+dependencies {
+    /*使编译的 apk 大大减小*/
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    androidTestImplementation 'junit:junit:4.12'
+    implementation files('libs/okhttp-3.9.1.jar')
+    implementation files('libs/okio-1.13.0.jar')
+    implementation files('libs/org.json.jar')
+    implementation files('libs/displaymanager.jar')
+    implementation files('libs/OpenPlatformSDK-release.jar')
+    compileOnly files('libs/classes.jar')
+
+}

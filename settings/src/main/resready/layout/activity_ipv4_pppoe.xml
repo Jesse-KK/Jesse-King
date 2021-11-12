@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_350dp">
+        <TextView android:layout_gravity="center" android:layout_marginTop="0.0dip" android:text="@string/setting_net_pppoe_connect" style="@style/SettingPartTitle" />
+    </LinearLayout>
+    <TextView android:layout_marginLeft="@dimen/_620dp" style="@style/text_ok_style" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_144dp" android:layout_marginTop="@dimen/_5dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="@dimen/_100dp" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/_510dp">
+            <TextView android:textSize="@dimen/_34sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/network_pppoe_name" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="@dimen/_704dp" android:layout_height="@dimen/_100dp">
+            <EditText android:textSize="@dimen/_42sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/pppoe_name" android:background="@drawable/selector_edittext_item" android:paddingLeft="@dimen/_30dp" android:paddingRight="@dimen/_30dp" android:focusable="true" android:nextFocusDown="@id/custom_password_edittext" android:layout_width="@dimen/_698dp" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_124dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="@dimen/_100dp" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/_510dp">
+            <TextView android:textSize="@dimen/_34sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/network_pppoe_password" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="@dimen/_704dp" android:layout_height="@dimen/_100dp">
+            <com.shcmcc.setting.custonview.MyPasswordCustomView android:id="@id/act_password_protected_custom" android:layout_width="@dimen/_698dp" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_148dp" android:layout_marginTop="@dimen/_100dp">
+        <Button android:textSize="@dimen/_42sp" android:textColor="@color/item_text_color" android:id="@id/btn_pppoe_connect" android:background="@drawable/ic_btn_selector" android:nextFocusUp="@id/custom_password_edittext" android:layout_width="@dimen/_260dp" android:layout_height="@dimen/_105dp" android:text="@string/pppoe_connect" />
+    </LinearLayout>
+</LinearLayout>

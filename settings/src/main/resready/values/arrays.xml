@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="set_video_tv_list_all_1">
+        <item>1080P-60HZ</item>
+        <item>1080P-50HZ</item>
+        <item>1080P-30HZ</item>
+        <item>1080P-25HZ</item>
+        <item>1080P-24HZ</item>
+        <item>1080I-60HZ</item>
+        <item>1080I-50HZ</item>
+        <item>720P-60HZ</item>
+        <item>720P-50HZ</item>
+        <item>576-50HZ</item>
+        <item>480-60HZ</item>
+        <item>PAL</item>
+        <item>NTSC</item>
+        <item>2160P-24HZ</item>
+        <item>2160P-25HZ</item>
+        <item>2160P-30HZ</item>
+        <item>2160P-60HZ</item>
+        <item>2160P-50HZ</item>
+        <item>4k-24HZ</item>
+        <item>4k-25HZ</item>
+        <item>4k-30HZ</item>
+        <item>4k-60HZ</item>
+        <item>4k-50HZ</item>
+    </string-array>
+    <string-array name="set_video_tv_value_all_1">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>256</item>
+        <item>257</item>
+        <item>258</item>
+        <item>259</item>
+        <item>260</item>
+        <item>512</item>
+        <item>513</item>
+        <item>514</item>
+        <item>515</item>
+        <item>516</item>
+    </string-array>
+</resources>

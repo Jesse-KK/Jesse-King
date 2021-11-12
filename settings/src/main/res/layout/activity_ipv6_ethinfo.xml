@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical">
+    <!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_network_info_ipv4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/network_message_ipv4" />-->
+    <!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_network_info_ipv6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/network_message_ipv6" />-->
+    <!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_wifi_info_ipv4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/wifi_message_ipv4" />-->
+    <!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_wifi_info_ipv6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/wifi_message_ipv6" />-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_31dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingPartTitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="0.0dip"
+            android:text="IPv6网络信息" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/sv_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/setting_wlan_home"
+            android:layout_width="@dimen/_820dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ip"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="IP地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <TextView
+                    android:id="@+id/ip_address"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mask"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="子网掩码"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <TextView
+                    android:id="@+id/mask_address"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gateway"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="网关地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <TextView
+                    android:id="@+id/gateway_address"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dns"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="DNS地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <TextView
+                    android:id="@+id/dns_address"
+                    style="@style/SettingRightImageView"
+                    android:duplicateParentState="true"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

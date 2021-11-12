@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_31dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingPartTitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="0.0dip"
+            android:text="@string/service_frame_version_detaile" />
+    </LinearLayout>
+    <!--    设备信息-->
+    <ScrollView
+        android:id="@id/sv_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@id/setting_bluetooth_home"
+            android:layout_width="@dimen/_820dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/rl_bluetooth_control"
+                style="@style/SettingSubLayout"
+                android:layout_width="@dimen/_820dp"
+                android:layout_below="@id/rl_bluetooth_switch"
+                android:layout_marginTop="0.0dip"
+                android:background="@drawable/selector_wifi_item"
+                android:nextFocusUp="@id/rl_bluetooth_switch"
+                android:nextFocusDown="@id/rl_bluetooth_progress">
+
+                <TextView
+
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="@string/system_version"
+                    android:textColor="@drawable/item_text_color" />
+
+                <TextView
+                    android:id="@+id/version_soft"
+                    style="@style/SettingRightTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:textSize="22.0sp"
+                    android:textColor="@drawable/item_text_color"
+                    android:text="null" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_bluetooth_control"
+                style="@style/SettingSubLayout"
+                android:layout_width="@dimen/_820dp"
+                android:layout_below="@id/rl_bluetooth_switch"
+                android:layout_marginTop="0.0dip"
+                android:background="@drawable/selector_wifi_item">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="@string/devices_android_version"
+                    android:textColor="@drawable/item_text_color" />
+
+                <TextView
+                    android:id="@+id/version_android"
+                    style="@style/SettingRightTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:textSize="22.0sp"
+                    android:textColor="@drawable/item_text_color"
+                    android:text="null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
