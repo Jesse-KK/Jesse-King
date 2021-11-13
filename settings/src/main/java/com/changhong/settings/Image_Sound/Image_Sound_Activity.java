@@ -23,13 +23,8 @@ public class Image_Sound_Activity extends Activity implements View.OnClickListen
     private TextView clarity_setting_switch, image_ratio_switch;
 
     private int current_clarity;//清晰度标志位
-    private static final int CLARITY_PRIORITY = 0;
-    private static final int SMOOTH_PRIORITY = 1;
-    private static final int AUTO_CHANGE = 2;
 
     private int current_ratio;//画面比例标志位
-    private static final int STRETCH_FULL_SCREEN = 0;
-    private static final int ADAPTIVE = 1;
 
 
     @Override
@@ -39,12 +34,6 @@ public class Image_Sound_Activity extends Activity implements View.OnClickListen
         mContext = Image_Sound_Activity.this;
         init();
         //清晰度开关
-        Settings.Secure.putInt(mContext.getContentResolver(), "clarity_mode", CLARITY_PRIORITY);
-        Settings.Secure.putInt(mContext.getContentResolver(), "clarity_mode", SMOOTH_PRIORITY);
-        Settings.Secure.putInt(mContext.getContentResolver(), "clarity_mode", AUTO_CHANGE);
-        //画面比例开关
-        Settings.Secure.putInt(mContext.getContentResolver(), "ratio_mode", STRETCH_FULL_SCREEN);
-        Settings.Secure.putInt(mContext.getContentResolver(), "ratio_mode", ADAPTIVE);
 
     }
 
@@ -58,10 +47,20 @@ public class Image_Sound_Activity extends Activity implements View.OnClickListen
         clarity_setting_switch = (TextView) findViewById(R.id.clarity_setting_switch);
         image_ratio_switch = (TextView) findViewById(R.id.image_ratio_switch);
         try {
-            current_clarity = Settings.Secure.getInt(mContext.getContentResolver(), "clarity_mode");
-            current_ratio = Settings.Secure.getInt(mContext.getContentResolver(), "ratio_mode");
+            current_clarity = Settings.Secure.getInt(mContext.getContentResolver(), "default_player_quality");
+            current_ratio = Settings.Secure.getInt(mContext.getContentResolver(), "default_screen_ratio");
         } catch (Settings.SettingNotFoundException e) {
             e.printStackTrace();
+        }
+
+        if (current_clarity == 0) {
+            clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_clarity));
+        }
+        if (current_clarity == 1) {
+            clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_smooth));
+        }
+        if (current_clarity == 2) {
+            clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_auto));
         }
 
         resolution_setting.setOnClickListener(this);
@@ -101,42 +100,42 @@ public class Image_Sound_Activity extends Activity implements View.OnClickListen
         if (event.getAction() == KeyEvent.ACTION_UP) {
             switch (v.getId()) {
                 case R.id.clarity_setting:
-                    Log.e(TAG, "onKey: 清晰度id是："+clarity_setting.getId() );
+                    Log.e(TAG, "onKey: 清晰度id是：" + clarity_setting.getId());
                     if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
                         Log.e(TAG, "onKey: " + "按下了右键");
-                        if (current_clarity == CLARITY_PRIORITY) {
-                            current_clarity = SMOOTH_PRIORITY;
+                        if (current_clarity == 0) {
+                            current_clarity = 1;
                             clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_smooth));
-                        } else if (current_clarity == SMOOTH_PRIORITY) {
-                            current_clarity = AUTO_CHANGE;
+                        } else if (current_clarity == 1) {
+                            current_clarity = 2;
                             clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_auto));
-                        } else if (current_clarity == AUTO_CHANGE) {
-                            current_clarity = CLARITY_PRIORITY;
+                        } else if (current_clarity == 2) {
+                            current_clarity = 0;
                             clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_clarity));
                         }
                     } else if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT) {
                         Log.e(TAG, "onKey: " + "按下了左键");
-                        if (current_clarity == CLARITY_PRIORITY) {
-                            current_clarity = AUTO_CHANGE;
+                        if (current_clarity == 0) {
+                            current_clarity = 2;
                             clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_auto));
-                        } else if (current_clarity == AUTO_CHANGE) {
-                            current_clarity = SMOOTH_PRIORITY;
+                        } else if (current_clarity == 2) {
+                            current_clarity = 1;
                             clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_smooth));
-                        } else if (current_clarity == SMOOTH_PRIORITY) {
-                            current_clarity = CLARITY_PRIORITY;
+                        } else if (current_clarity == 1) {
+                            current_clarity = 0;
                             clarity_setting_switch.setText(getResources().getText(R.string.setting_quality_clarity));
                         }
                     }
-                        break;
+                    break;
                 case R.id.image_ratio:
-                    Log.e(TAG, "onKey: 画面比例id是："+image_ratio.getId() );
+                    Log.e(TAG, "onKey: 画面比例id是：" + image_ratio.getId());
                     if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT || keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
                         Log.e(TAG, "onKey:按下了画面比例的左右键 ");
-                        if (current_ratio == ADAPTIVE) {
-                            current_ratio = STRETCH_FULL_SCREEN;
+                        if (current_ratio == 0) {
+                            current_ratio = 1;
                             image_ratio_switch.setText(getResources().getText(R.string.setting_ratio_full));
                         } else {
-                            current_ratio = ADAPTIVE;
+                            current_ratio = 0;
                             image_ratio_switch.setText(getResources().getText(R.string.setting_ratio_adaptive));
                         }
                         break;
@@ -144,7 +143,7 @@ public class Image_Sound_Activity extends Activity implements View.OnClickListen
                 default:
                     break;
             }
-        }else {
+        } else {
             return false;
         }
         return false;

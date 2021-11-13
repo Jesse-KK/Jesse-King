@@ -50,7 +50,7 @@
                     style="@style/SettingSubTextView"
                     android:layout_marginLeft="@dimen/_180dp"
                     android:duplicateParentState="true"
-                    android:text="密码"
+                    android:text="账号"
                     android:textColor="@drawable/item_text_color"
                     android:textSize="22.0sp" />
 

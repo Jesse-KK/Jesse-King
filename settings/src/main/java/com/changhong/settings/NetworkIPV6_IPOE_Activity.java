@@ -109,6 +109,6 @@ public class NetworkIPV6_IPOE_Activity extends Activity implements View.OnClickL
         mEthManager.connectIpv6();
 //            mEthManager.setEthernetEnabled(true);
 
-//        Settings.Secure.putInt(getContentResolver(), "default_eth_mod", 1);
+        Settings.Secure.putInt(getContentResolver(), "default_eth_mod", 1);
     }
 }

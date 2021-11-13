@@ -119,7 +119,6 @@ public class StaticIPv4Activity extends Activity implements View.OnClickListener
                                 CommonUtils.showToastShort(mContext, "网络已连接");
                             }
                         }
-
                         break;
                     default:
                         break;

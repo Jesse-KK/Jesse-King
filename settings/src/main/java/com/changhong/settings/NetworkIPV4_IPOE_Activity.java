@@ -13,7 +13,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class NetworkIPV4_IPOE_Activity extends Activity implements View.OnClickListener {
     private static final String TAG = "ipv4_IPOE_Activity";
@@ -107,6 +106,6 @@ public class NetworkIPV4_IPOE_Activity extends Activity implements View.OnClickL
         mEthManager.connectIpv4();
 //            mEthManager.setEthernetEnabled(true);
 
-//        Settings.Secure.putInt(getContentResolver(), "default_eth_mod", 1);
+        Settings.Secure.putInt(getContentResolver(), "default_eth_mod", 1);
     }
 }

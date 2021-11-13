@@ -357,7 +357,7 @@ public class EthernetIPv4Activity extends Activity implements View.OnClickListen
         mEthManager.enableIpv4(true);
         mEthManager.connectIpv4();
 
-//        Settings.Secure.putInt(mContext.getContentResolver(), "default_eth_mod", 0);
+        Settings.Secure.putInt(mContext.getContentResolver(), "default_eth_mod", 0);
         mNetHandler.sendEmptyMessageDelayed(MESSAGE_UPDATEETHINFO, 5000);
 
     }
