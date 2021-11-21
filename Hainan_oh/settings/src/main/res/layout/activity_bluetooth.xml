@@ -6,7 +6,7 @@
     </LinearLayout>
     <ScrollView android:id="@id/sv_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
         <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/setting_bluetooth_home" android:layout_width="@dimen/_820dp" android:layout_height="fill_parent">
-            <RelativeLayout android:id="@id/rl_bluetooth_control" android:background="@drawable/selector_wifi_item" android:nextFocusUp="@id/rl_bluetooth_switch" android:nextFocusDown="@id/rl_bluetooth_progress" android:layout_marginTop="0.0dip" android:layout_below="@id/rl_bluetooth_switch" style="@style/SettingSubLayout1">
+            <RelativeLayout android:id="@id/rl_bluetooth_control" android:focusable="true" android:background="@drawable/selector_wifi_item"  android:nextFocusDown="@id/rl_bluetooth_progress" android:layout_marginTop="0.0dip"  style="@style/SettingSubLayout1">
                 <TextView android:textColor="@drawable/item_text_color" android:duplicateParentState="true" android:text="@string/setting_bluetooth_remote_controller" style="@style/SettingSubTextView" />
                 <ImageView android:background="@drawable/ic_arrow_right_selector" android:duplicateParentState="true" style="@style/SettingRightImageView" />
             </RelativeLayout>

@@ -54,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="right|center"
-                    android:textSize="22.0sp"
+                    android:textSize="20.0sp"
                     android:textColor="@drawable/item_text_color"
                     android:text="null" />
             </RelativeLayout>
@@ -81,7 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="right|center"
-                    android:textSize="22.0sp"
+                    android:textSize="20.0sp"
                     android:textColor="@drawable/item_text_color"
                     android:text="null" />
 
@@ -109,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="right|center"
-                    android:textSize="22.0sp"
+                    android:textSize="20.0sp"
                     android:textColor="@drawable/item_text_color"
                     android:text="null" />
 
@@ -137,7 +137,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="right|center"
-                    android:textSize="22.0sp"
+                    android:textSize="20.0sp"
                     android:textColor="@drawable/item_text_color"
                     android:text="null" />
             </RelativeLayout>

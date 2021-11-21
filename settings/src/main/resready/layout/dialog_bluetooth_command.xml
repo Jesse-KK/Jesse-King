@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/_500dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dialog_bg2" android:layout_width="@dimen/_1036dp" android:layout_height="@dimen/_500dp" android:layout_centerHorizontal="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_235dp" android:layout_marginTop="@dimen/_60dp">
+            <TextView android:textSize="@dimen/_46sp" android:textColor="@color/system_restore" android:gravity="center_horizontal" android:id="@id/text_message" android:layout_marginLeft="@dimen/_42dp" android:layout_marginRight="@dimen/_42dp" android:layout_marginBottom="0.0dip" android:text="" android:textScaleX="0.95" android:lineSpacingExtra="@dimen/_18dp" style="@style/SettingMainItemText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_170dp">
+            <Button android:textSize="@dimen/_40sp" android:textColor="@color/item_text_color" android:id="@id/bt_disconnect" android:background="@drawable/ic_btn_selector_restore" android:visibility="gone" android:layout_width="@dimen/_254dp" android:layout_height="@dimen/_90dp" android:layout_marginRight="@dimen/_20dp" android:text="@string/bluetooth_disconnect" />
+            <Button android:textSize="@dimen/_40sp" android:textColor="@color/item_text_color" android:id="@id/bt_connect" android:background="@drawable/ic_btn_selector_restore" android:visibility="gone" android:layout_width="@dimen/_254dp" android:layout_height="@dimen/_90dp" android:layout_marginRight="@dimen/_20dp" android:text="@string/bluetooth_connect" />
+            <Button android:textSize="@dimen/_40sp" android:textColor="@color/item_text_color" android:id="@id/bt_unbond" android:background="@drawable/ic_btn_selector_restore" android:layout_width="@dimen/_254dp" android:layout_height="@dimen/_90dp" android:layout_marginRight="@dimen/_20dp" android:text="@string/bluetooth_unbond" />
+            <Button android:textSize="@dimen/_40sp" android:textColor="@color/item_text_color" android:id="@id/bt_cancel" android:background="@drawable/ic_btn_selector_restore" android:layout_width="@dimen/_254dp" android:layout_height="@dimen/_90dp" android:text="@string/setting_bluetooth_unmatch" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

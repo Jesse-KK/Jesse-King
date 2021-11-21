@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_394dp" android:layout_marginTop="@dimen/_48dp">
+        <TextView android:layout_gravity="center" android:id="@id/et_wifi_name" android:layout_marginTop="0.0dip" style="@style/SettingPartTitle" />
+    </LinearLayout>
+    <TextView android:layout_marginLeft="@dimen/_800dp" style="@style/text_ok_style" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_124dp" android:layout_marginTop="@dimen/_5dp">
+<!--        <com.shcmcc.setting.custonview.MyPasswordCustomView android:id="@id/et_wifi_password" android:layout_width="@dimen/_1300dp" android:layout_height="fill_parent" />-->
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_148dp" android:layout_marginTop="@dimen/_100dp">
+        <Button android:textSize="@dimen/_42sp" android:textColor="@color/white" android:id="@id/setting_wifi_connect_btn" android:background="@drawable/ic_btn_selector" android:nextFocusUp="@id/custom_password_edittext" android:nextFocusDown="@id/setting_wifi_connect_btn" android:layout_width="@dimen/_260dp" android:layout_height="@dimen/_105dp" android:text="@string/wifi_connect" />
+    </LinearLayout>
+</LinearLayout>

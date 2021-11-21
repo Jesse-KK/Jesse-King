@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/act_ipv6_static" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bw="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_190dp" android:layout_marginTop="@dimen/_80dp">
+        <TextView android:layout_gravity="center" android:layout_marginTop="0.0dip" android:text="@string/setting_net_static_ipv6" style="@style/SettingPartTitle" />
+    </LinearLayout>
+    <TextView android:layout_marginLeft="@dimen/_198dp" style="@style/text_ok_style" />
+<!--    <com.shcmcc.setting.custonview.Ipv6AddEditText android:id="@id/et_static_ipv6_ip" android:nextFocusUp="@id/et_static_ipv6_ip" android:nextFocusDown="@id/et_static_ipv6_mask" android:layout_marginTop="@dimen/_5dp" bw:name="@string/network_static_ip" style="@style/ipv6_textview" />-->
+<!--    <com.shcmcc.setting.custonview.IpV6AddMaskEditText android:id="@id/et_static_ipv6_mask" android:nextFocusRight="@id/et_static_ipv6_getway" android:nextFocusUp="@id/et_static_ipv6_ip" android:nextFocusDown="@id/et_static_ipv6_getway" bw:name="@string/network_static_mask_length" style="@style/ipv6_textview" />-->
+<!--    <com.shcmcc.setting.custonview.Ipv6AddEditText android:id="@id/et_static_ipv6_getway" android:nextFocusUp="@id/et_static_ipv6_mask" android:nextFocusDown="@id/et_static_ipv6_dns1" bw:name="@string/network_static_getway" style="@style/ipv6_textview" />-->
+<!--    <com.shcmcc.setting.custonview.Ipv6AddEditText android:id="@id/et_static_ipv6_dns1" android:nextFocusUp="@id/et_static_ipv6_getway" android:nextFocusDown="@id/et_static_ipv6_dns2" bw:name="@string/network_static_dns1" style="@style/ipv6_textview" />-->
+<!--    <com.shcmcc.setting.custonview.Ipv6AddEditText android:id="@id/et_static_ipv6_dns2" android:nextFocusUp="@id/et_static_ipv6_dns1" android:nextFocusDown="@id/btn_static_ipv6_connect" bw:name="@string/network_static_dns2" style="@style/ipv6_textview" />-->
+    <Button android:textSize="@dimen/_42sp" android:textColor="@color/item_text_color" android:layout_gravity="center_horizontal" android:id="@id/btn_static_ipv6_connect" android:background="@drawable/ic_btn_selector" android:nextFocusUp="@id/et_static_ipv6_dns2" android:nextFocusDown="@id/btn_static_ipv6_connect" android:layout_width="@dimen/_260dp" android:layout_height="@dimen/_105dp" android:layout_marginTop="@dimen/_12dp" android:text="@string/pppoe_connect" />
+</LinearLayout>

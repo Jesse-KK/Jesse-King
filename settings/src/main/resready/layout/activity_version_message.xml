@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/_30dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_version_message_version_software" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/devices_software_version" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_version_message_version_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/service_frame_version" />-->
+<!--    <com.shcmcc.setting.custonview.view.ViewStub android:id="@id/activity_version_message_version_licence_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />-->
+<!--    <com.shcmcc.setting.custonview.view.ViewStub android:id="@id/activity_version_message_version_gateway_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />-->
+<!--    <com.shcmcc.setting.custonview.view.ViewStub android:id="@id/activity_version_message_version_player_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_version_message_version_android" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/devices_android_version" />-->
+</LinearLayout>

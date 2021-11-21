@@ -24,6 +24,7 @@ public class EthIPv4InfoActivity extends Activity {
         initData();
     }
 
+
     public void initData() {
         mEthManager = (EthernetManager) mContext.getSystemService(Context.ETHERNET_SERVICE);
         IpInfo ipv4Info = mEthManager.getIPv4Info();
@@ -40,10 +41,10 @@ public class EthIPv4InfoActivity extends Activity {
     }
 
     public void initView(){
-        ip_address=findViewById(R.id.ip_address);
-        mask_address=findViewById(R.id.mask_address);
-        gateway_address=findViewById(R.id.gateway_address);
-        dns_address=findViewById(R.id.dns_address);
+        ip_address=(TextView) findViewById(R.id.ip_address);
+        mask_address=(TextView) findViewById(R.id.mask_address);
+        gateway_address=(TextView) findViewById(R.id.gateway_address);
+        dns_address=(TextView) findViewById(R.id.dns_address);
     }
 
     private String intToIp(int paramInt) {

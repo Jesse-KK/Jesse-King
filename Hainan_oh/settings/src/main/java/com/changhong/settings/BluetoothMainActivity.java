@@ -44,7 +44,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import static com.changhong.settings.MyApplication.flag;
-public class BluetoothMainActivity extends Activity {
+public class BluetoothMainActivity extends Activity implements View.OnClickListener {
     ProgressBar progress;
 
     private static WindowManager wm;
@@ -59,6 +59,7 @@ public class BluetoothMainActivity extends Activity {
     private ListView lvPairedDeviceList;
     private LinearLayout llScanView;
     private LinearLayout llControlView;
+    private RelativeLayout rl_bluetooth_control;
 
     private AllListAdapter allListAdapter;
     public static PairedListAdapter pairedListAdapter;
@@ -354,7 +355,7 @@ public class BluetoothMainActivity extends Activity {
                                 break;
                         }
                         //connectDevice(device);
-                        //Toast.makeText(MainActivity.this, "配对成功！", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Settings.this, "配对成功！", Toast.LENGTH_SHORT).show();
 
                         break;
                     case BluetoothDevice.BOND_NONE://取消配对/未配对
@@ -499,11 +500,18 @@ public class BluetoothMainActivity extends Activity {
         }
     }
     public void initView(){
-        tv_bonded_title=findViewById(R.id.tv_bonded_title);
-        btnStopScan=findViewById(R.id.rl_bluetooth_progress);
-        progress=findViewById(R.id.progress);
-        lvPairedDeviceList=findViewById(R.id.paired_devices);
-        lvAllDeviceList=findViewById(R.id.all_devices);
+        tv_bonded_title=(TextView)findViewById(R.id.tv_bonded_title);
+        btnStopScan=(RelativeLayout) findViewById(R.id.rl_bluetooth_progress);
+        progress=(ProgressBar) findViewById(R.id.progress);
+        lvPairedDeviceList=(ListView)findViewById(R.id.paired_devices);
+        lvAllDeviceList=(ListView)findViewById(R.id.all_devices);
+        rl_bluetooth_control=(RelativeLayout)findViewById(R.id.rl_bluetooth_control);
+        rl_bluetooth_control.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(mContext,BluetoothControlorActivity.class));
+            }
+        });
         btnStopScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -565,7 +573,7 @@ public class BluetoothMainActivity extends Activity {
                 }
 
                 if (remoteDevice.getBondState() == BluetoothDevice.BOND_NONE) {
-                    //Toast.makeText(MainActivity.this, getResources().getString(R.string.bondingKey), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Settings.this, getResources().getString(R.string.bondingKey), Toast.LENGTH_SHORT).show();
                     remoteDevice.createBond();
                     tv_bonded_title.setVisibility(View.VISIBLE);
 
@@ -586,7 +594,7 @@ public class BluetoothMainActivity extends Activity {
         final int position = i;
         Log.i(TAG, "---------createView()");
         selectView = View.inflate(mContext, R.layout.dialog_bluetooth_command, null);
-        TextView text_message=selectView.findViewById(R.id.text_message);
+        TextView text_message=(TextView) selectView.findViewById(R.id.text_message);
         Button bt_connect =(Button) selectView.findViewById(R.id.bt_connect);
         bt_connect.setVisibility(View.VISIBLE);
         Button bt_unpair = (Button) selectView.findViewById(R.id.bt_unbond);
@@ -1258,5 +1266,8 @@ public class BluetoothMainActivity extends Activity {
     };
 
 
+    @Override
+    public void onClick(View view) {
 
+    }
 }

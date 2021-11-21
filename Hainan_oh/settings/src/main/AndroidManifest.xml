@@ -35,9 +35,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.provider.Settings.ACTION_SETTINGS"/>
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -55,8 +56,6 @@
         <activity android:name=".About.About_Activity" />
         <activity android:name=".About.Certificate_Information_Activity" />
         <activity android:name=".About.Diagnose_Activity" />
-        <activity android:name=".About.Diagnose_Business_Activity" />
-        <activity android:name=".About.Diagnose_Terminal_Activity" />
         <activity android:name=".About.Info_Unit_Activity" />
         <activity android:name=".About.Version_Information_Activity" />
         <activity android:name=".General.Reset_Setting_Activity" />
@@ -68,5 +67,13 @@
         <activity android:name=".Security.Security_Password_Activity" />
         <activity android:name=".Update_king.Update_System_Auto_Activity" />
         <activity android:name=".General.General_Activity" />
+        <activity android:name=".NetworkIPV4_IPOE_Activity" />
+        <activity android:name=".EthernetIPv6Activity" />
+        <activity android:name=".NetworkIPV6_IPOE_Activity" />
+        <activity android:name=".NetworkIPV6_PPPOE_Activity" />
+        <activity android:name=".NetworkIPV4_PPPOE_Activity" />
+        <activity android:name=".StaticIPv6Activity" />
+        <activity android:name=".BluetoothControlorActivity" />
+        <activity android:name=".WifiAPActivity" />
     </application>
 </manifest>

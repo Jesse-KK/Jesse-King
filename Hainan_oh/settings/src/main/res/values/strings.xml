@@ -6,6 +6,20 @@
     <string name="alert_network_cfg_gateway" translatable="false">网关地址不合格</string>
     <string translatable="false" name="alert_network_cfg_gateway_null">请输入网关地址</string>
     <string name="eth_account_error">Can\'t Be Empty</string>
+    <string name="eth_connecting_wait">正在连接请稍后...</string>
+    <string name="eth_static_ipv6_format_error">IP 格式错误</string>
+    <string name="eth_static_error_dns1">主Dns不合法</string>
+    <string name="eth_static_error_dns2">备Dns不合法</string>
+    <string name="eth_static_input_0_2_f">请输入0-f的数值</string>
+    <string name="eth_static_connect_success">静态IP连接成功</string>
+    <string name="eth_status_connected">已连接</string>
+    <string name="eth_status_connect_failed">连接失败</string>
+    <string name="eth_static_connect_failed">静态IP连接失败</string>
+    <string name="eth_connect_failed">连接失败</string>
+    <string name="eth_link_down">网线脱落</string>
+
+    <string name="eth_ip_settings_invalid_network_prefix_length" msgid="40470058023181052">请输入有效掩码长度：0-32</string>
+    <string name="eth_ip_settings_invalid_network_prefix_length_v6" msgid="40470058023181052">请输入有效掩码长度：0-64</string>
     <string translatable="false" name="alert_network_cfg_ip">IP地址不合格</string>
     <string translatable="false" name="alert_network_cfg_ip_getway">IP地址、网关地址不匹配</string>
     <string translatable="false" name="alert_network_cfg_ip_mask">IP地址、子网掩码不匹配</string>
@@ -966,6 +980,7 @@
     <string name="eth_dns1_ipv6_hint">::</string>
     <string name="eth_prefix_length_ipv6_hint">64</string>
     <string name="eth_prefix_length_ipv4_hint">24</string>
+    <string name="eth_ip_settings_invalid_dns" msgid="8744583948328391047">请输入有效DNS</string>
     <string name="eth_ip_settings_invalid_ip_address">IP不合法</string>
     <string name="eth_ip_settings_invalid_mask">掩码长度不合法</string>
     <string name="eth_ip_settings_invalid_gateway">网关不合法</string>
@@ -973,6 +988,23 @@
     <string name="eth_ip_settings_invalid_dns2">备DNS不合法</string>
     <string name="eth_ip_settings_invalid_info4">IPv4 信息填写有误</string>
     <string name="eth_ip_settings_invalid_info6">IPv6 信息填写有误</string>
+
+    <string name="eth_ip_error">无效 IP 地址</string>
+    <string name="eth_prefix_error">无效掩码长度</string>
+    <string name="eth_gateway_error">无效网关地址</string>
+    <string name="eth_dns1_error">无效域名1</string>
+    <string name="eth_dns2_error">无效域名2</string>
+    <string name="eth_ip_error_v4">无效IP</string>
+    <string name="eth_prefix_error_v4">无效掩码长度</string>
+    <string name="eth_gateway_error_v4">无效网关</string>
+    <string name="eth_dns1_error_v4">无效域名1</string>
+    <string name="eth_dns2_error_v4">无效域名2</string>
+    <string name="eth_ip_error_v6">无效IP</string>
+    <string name="eth_prefix_error_v6">无效掩码长度</string>
+    <string name="eth_gateway_error_v6">无效网关</string>
+    <string name="eth_dns1_error_v6">无效域名1</string>
+    <string name="eth_dns2_error_v6">无效域名2</string>
+    <string name="eth_prefix_v4">掩码长度：</string>
 
     <string name="bluetooth_key">蓝牙连接</string>
     <string name="connected">已连接</string>

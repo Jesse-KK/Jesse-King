@@ -109,6 +109,7 @@ public class WiFiActivity extends Activity {
     private void initView() {
         mWifiAdmin = new WifiAdminUtils(mContext);
         wifiManager = (WifiManager) mContext.getSystemService(Context.WIFI_SERVICE);
+        wifiManager.setWifiEnabled(true);
 //        TextView tv_title = (TextView) findViewById(R.id.tv_title);
 //        tv_title.requestFocus();
         listView = (ListView) findViewById(R.id.wifi_setting_list);

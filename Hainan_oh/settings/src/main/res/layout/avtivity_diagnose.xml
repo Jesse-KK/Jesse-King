@@ -32,25 +32,6 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/diagnose_terminal"
-                style="@style/SettingSubLayout"
-                android:layout_below="@id/rl_bluetooth_switch"
-                android:layout_marginTop="0.0dip"
-                android:background="@drawable/selector_wifi_item">
-
-                <TextView
-                    style="@style/SettingSubTextView"
-                    android:duplicateParentState="true"
-                    android:text="@string/setting_net_diagnose_terminal"
-                    android:textColor="@drawable/item_text_color" />
-
-                <ImageView
-                    style="@style/SettingRightImageView"
-                    android:background="@drawable/ic_arrow_right_selector"
-                    android:duplicateParentState="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
                 android:id="@+id/diagnose_business"
                 style="@style/SettingSubLayout"
                 android:layout_below="@id/rl_bluetooth_switch"

@@ -18,4 +18,7 @@ public class ChEthernetManager {
     public static final int FAILED_REASON_PPPOE_AUTH_FAILED = 4;
     public static final int FAILED_REASON_PPPOE_TIMEDOUT = 5;
     public static final int FAILED_REASON_INVALID_PARAMETER = 6;
+    public static final int EVENT_STATIC_CONNECT_FAILED = 15;
+    public static final int EVENT_STATIC_CONNECT_SUCCESSED = 14;
+
 }

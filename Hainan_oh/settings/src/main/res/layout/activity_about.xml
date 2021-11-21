@@ -69,24 +69,25 @@
                     android:duplicateParentState="true" />
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/service_type"
-                style="@style/SettingSubLayout"
-                android:layout_below="@id/rl_bluetooth_switch"
-                android:layout_marginTop="0.0dip"
-                android:background="@drawable/selector_wifi_item">
+<!--            海南设置中不需要加认证信息-->
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/service_type"-->
+<!--                style="@style/SettingSubLayout"-->
+<!--                android:layout_below="@id/rl_bluetooth_switch"-->
+<!--                android:layout_marginTop="0.0dip"-->
+<!--                android:background="@drawable/selector_wifi_item">-->
 
-                <TextView
-                    style="@style/SettingSubTextView"
-                    android:duplicateParentState="true"
-                    android:text="@string/service_type"
-                    android:textColor="@drawable/item_text_color" />
+<!--                <TextView-->
+<!--                    style="@style/SettingSubTextView"-->
+<!--                    android:duplicateParentState="true"-->
+<!--                    android:text="@string/service_type"-->
+<!--                    android:textColor="@drawable/item_text_color" />-->
 
-                <ImageView
-                    style="@style/SettingRightImageView"
-                    android:background="@drawable/ic_arrow_right_selector"
-                    android:duplicateParentState="true" />
-            </RelativeLayout>
+<!--                <ImageView-->
+<!--                    style="@style/SettingRightImageView"-->
+<!--                    android:background="@drawable/ic_arrow_right_selector"-->
+<!--                    android:duplicateParentState="true" />-->
+<!--            </RelativeLayout>-->
 
             <RelativeLayout
                 android:id="@+id/setting_net_diagnose"

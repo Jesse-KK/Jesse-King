@@ -15,9 +15,14 @@ buildscript {
 }
 
 allprojects {
+//    gradle.projectsEvaluated {
+//        tasks.withType(JavaCompile){
+//            options.compilerArgs.add('-Xbootclasspath/p:settings/libs/classes.jar')//记得修改getwifimesseage和hisi3798mv100base为自己实际的module与jar包
+//        }
+//    }
     gradle.projectsEvaluated {
         tasks.withType(JavaCompile){
-            options.compilerArgs.add('-Xbootclasspath/p:settings/libs/classes.jar')//记得修改getwifimesseage和hisi3798mv100base为自己实际的module与jar包
+            options.compilerArgs.add('-Xbootclasspath/p:settings/libs/hisi_20200221.jar')//记得修改getwifimesseage和hisi3798mv100base为自己实际的module与jar包
         }
     }
     repositories {

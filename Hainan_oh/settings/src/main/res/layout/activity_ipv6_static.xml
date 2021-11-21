@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_31dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingPartTitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="0.0dip"
+            android:text="静态IPv6" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:padding="10.0dip"
+        android:text="@string/delay_time_edit_desc"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_36dp" />
+
+    <ScrollView
+        android:id="@id/sv_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/setting_wlan_home"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusRight="@id/ip_1"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="IP地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/ip_1"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/ip1_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_1"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/ip1_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_1"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/ip_2"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="220dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/ip2_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/ip2_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/ip_3"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="320dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/ip3_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/ip3_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/ip_4"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="420dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/ip4_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/ip4_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/ip_5"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="520dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/ip5_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_5"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/ip5_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_5"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/ip_6"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="620dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/ip6_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_6"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/ip6_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_6"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/ip_7"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="720dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/ip7_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_7"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/ip7_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/ip_7"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/ip_8"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="820dp"
+                    android:nextFocusDown="@id/length_mask"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mask"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="子网前缀长度"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/length_mask"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:nextFocusUp="@id/ip_8"
+                    android:nextFocusDown="@id/gateway_8"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_marginLeft="820dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gateway"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusRight="@id/gateway_1"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="网关地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/gateway_1"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/gateway_1_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_1"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/gateway_1_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_1"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/gateway_2"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="220dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/gateway_2_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/gateway_2_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/gateway_3"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="320dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/gateway_3_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/gateway_3_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/gateway_4"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="420dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/gateway_4_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/gateway_4_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/gateway_5"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="520dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/gateway_5_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_5"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/gateway_5_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_5"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/gateway_6"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="620dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/gateway_6_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_6"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/gateway_6_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_6"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/gateway_7"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="720dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/gateway_7_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_7"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/gateway_7_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/gateway_7"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/gateway_8"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="820dp"
+                    android:nextFocusUp="@id/length_mask"
+                    android:nextFocusDown="@id/dns_8"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dns"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusRight="@id/dns_1"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="DNS地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/dns_1"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/dns_1_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_1"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/dns_1_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_1"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns_2"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="220dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/dns_2_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/dns_2_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns_3"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="320dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/dns_3_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/dns_3_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns_4"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="420dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/dns_4_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/dns_4_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/dns_5"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="520dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/dns_5_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_5"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/dns_5_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_5"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/dns_6"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="620dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/dns_6_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_6"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/dns_6_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_6"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/dns_7"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="720dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/dns_7_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_7"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/dns_7_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/dns_7"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/dns_8"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="820dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/spare_ip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusRight="@id/spare_dns1"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="备用DNS"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/spare_dns1"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/spare_ip1_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns1"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/spare_ip1_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns1"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/spare_dns2"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="220dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/spare_ip2_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/spare_ip2_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/spare_dns3"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="320dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/spare_ip3_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/spare_ip3_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/spare_dns4"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="420dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/spare_ip4_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/spare_ip4_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/spare_dns5"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="520dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/spare_ip5_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns5"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/spare_ip5_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns5"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/spare_dns6"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="620dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/spare_ip6_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns6"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/spare_ip6_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns6"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/spare_dns7"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="720dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/spare_ip7_point1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns7"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/spare_ip7_point2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:paddingLeft="2dp"
+                    android:layout_toRightOf="@id/spare_dns7"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/spare_dns8"
+                    android:layout_width="@dimen/_135dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="820dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_confirm__static_ipv6_connection"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20dp"
+                android:gravity="center"
+                android:text="连接"
+                android:textSize="@dimen/_28sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

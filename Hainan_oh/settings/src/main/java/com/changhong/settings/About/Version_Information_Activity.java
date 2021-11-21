@@ -1,18 +1,23 @@
 package com.changhong.settings.About;
 
-import android.annotation.Nullable;
+
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.changhong.settings.R;
 
 public class Version_Information_Activity extends Activity {
     private static final String TAG = "版本信息";
-    private TextView device_model_, serial_15, mac_address_;
+    private TextView device_model_, epg_version, mac_address_;
     private Context mContext = Version_Information_Activity.this;
 
 
@@ -26,9 +31,18 @@ public class Version_Information_Activity extends Activity {
     private void init() {
         device_model_ = (TextView) findViewById(R.id.version_soft);
         mac_address_ = (TextView) findViewById(R.id.version_android);
+        epg_version = (TextView)findViewById(R.id.epg_version);
 
         String software_version = SystemProperties.get("ro.build.version.incremental");
 
+        String epg_version_string = "";
+        PackageManager manager = mContext.getPackageManager();
+        try {
+            PackageInfo info = manager.getPackageInfo("tv.icntv.ott", 0);
+            epg_version_string = info.versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.e(TAG, "get package info err: " + e);
+        }
         //牌照方版本
        /* String epg_version = "";
         PackageManager manager = mContext.getPackageManager();
@@ -42,6 +56,8 @@ public class Version_Information_Activity extends Activity {
 
         device_model_.setText(software_version);
         mac_address_.setText("Android  "+android_version);
+        epg_version.setText(epg_version_string);
+
 
     }
 

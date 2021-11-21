@@ -40,13 +40,13 @@ public class BluetoothReceiver extends BroadcastReceiver {
         if (action.equals("android.intent.action.BOOT_COMPLETED")) {
             Log.i("cheng", "I have receive the Boot receiver");
            /* first = true;
-        Intent intent1 = new Intent(context, MainActivity.class);
+        Intent intent1 = new Intent(context, Settings.class);
         intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent1);*/
             if (!mBluetoothAdapter.isEnabled()) {
                 mBluetoothAdapter.enable();
                 Log.i("Cheng", "I have open the bluetooth");
-                //Toast.makeText(MainActivity.this, "收到开机广播", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Settings.this, "收到开机广播", Toast.LENGTH_SHORT).show();
                 quitBond();
                 if (!mBluetoothAdapter.isDiscovering()) {
                     mBluetoothAdapter.startDiscovery();

@@ -67,6 +67,36 @@
                 android:layout_width="@dimen/_820dp"
                 android:layout_below="@id/rl_bluetooth_switch"
                 android:layout_marginTop="0.0dip"
+                android:background="@drawable/selector_wifi_item"
+                android:nextFocusUp="@id/rl_bluetooth_switch"
+                android:nextFocusDown="@id/rl_bluetooth_progress">
+
+                <TextView
+
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="牌照方版本"
+                    android:textColor="@drawable/item_text_color" />
+
+                <TextView
+                    android:id="@+id/epg_version"
+                    style="@style/SettingRightTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:textSize="22.0sp"
+                    android:textColor="@drawable/item_text_color"
+                    android:text="null" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_bluetooth_control"
+                style="@style/SettingSubLayout"
+                android:layout_width="@dimen/_820dp"
+                android:layout_below="@id/rl_bluetooth_switch"
+                android:layout_marginTop="0.0dip"
                 android:background="@drawable/selector_wifi_item">
 
                 <TextView

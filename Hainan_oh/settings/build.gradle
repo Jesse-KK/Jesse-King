@@ -9,7 +9,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 210830
-        versionName "0.0.1"
+        versionName "0.0.9"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -62,8 +62,9 @@ dependencies {
     implementation files('libs/okhttp-3.9.1.jar')
     implementation files('libs/okio-1.13.0.jar')
     implementation files('libs/org.json.jar')
-    compileOnly files('libs/classes.jar')
     implementation files('libs/displaymanager.jar')
     implementation files('libs/OpenPlatformSDK-release.jar')
+//    compileOnly files('libs/classes.jar')
+    compileOnly files('libs/hisi_20200221.jar')
 
 }

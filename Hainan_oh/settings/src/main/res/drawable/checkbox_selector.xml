@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/authentication_radio_bg_select" />
-    <item android:state_checked="false" android:drawable="@drawable/authentication_radio_bg" />
-    <item android:state_focused="true" android:drawable="@drawable/focus1" />
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/authentication_radio_bg_select" android:state_checked="true" />
+    <item android:drawable="@drawable/authentication_radio_bg" android:state_checked="false" />
+    <item android:drawable="@drawable/focus1" android:state_focused="true" />
 </selector>

@@ -46,7 +46,7 @@
     </style>
     <style name="SettingMainItemText">
         <item name="android:textSize">@dimen/_36sp</item>
-        <item name="android:textColor">@color/blue_dark</item>
+        <item name="android:textColor">@color/main_white</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/_45dp</item>

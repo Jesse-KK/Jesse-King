@@ -36,10 +36,10 @@ public class WifiIPv6InfoActivity extends Activity {
         super.onCreate(bundle);
         setContentView(R.layout.activity_ipv6_wifiinfo);
         Log.e(TAG, "WifiIPv6InfoActivity: onCreate");
-        ip_address=findViewById(R.id.ip_address);
-        mask_address=findViewById(R.id.mask_address);
-        gateway_address=findViewById(R.id.gateway_address);
-        dns_address=findViewById(R.id.dns_address);
+        ip_address=(TextView) findViewById(R.id.ip_address);
+        mask_address=(TextView)findViewById(R.id.mask_address);
+        gateway_address=(TextView)findViewById(R.id.gateway_address);
+        dns_address=(TextView)findViewById(R.id.dns_address);
         mWifiManager= (WifiManager) mContext.getSystemService(Context.WIFI_SERVICE);
         getWifiInfo();
         ip_address.setText(ipV6.getHostAddress());

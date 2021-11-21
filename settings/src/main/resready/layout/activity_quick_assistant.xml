@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/_30dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_system_delay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/system_delay_time_show" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_system_sleep_show" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/system_sleep_show" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_system_disable_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/system_disable_wifi" />-->
+</LinearLayout>

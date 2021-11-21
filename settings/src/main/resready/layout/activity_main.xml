@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/settings_bg">
+
+    <RelativeLayout
+        android:id="@id/rl_main_settings_home"
+        android:layout_width="@dimen/_1300dp"
+        android:layout_height="@dimen/_800dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@id/setting_main_1"
+            style="@style/SettingMainItem">
+
+            <ImageView
+                style="@style/SettingMainItemImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bg_main_network" />
+
+            <TextView
+                style="@style/SettingMainItemText"
+                android:text="@string/setting_net" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/setting_main_2"
+            style="@style/SettingMainItem"
+            android:layout_toRightOf="@id/setting_main_1">
+
+            <ImageView
+                style="@style/SettingMainItemImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bg_main_image" />
+
+            <TextView
+                style="@style/SettingMainItemText"
+                android:text="@string/setting_figure" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/setting_main_3"
+            style="@style/SettingMainItem"
+            android:layout_toRightOf="@id/setting_main_2">
+
+            <ImageView
+                style="@style/SettingMainItemImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bg_main_currency" />
+
+            <TextView
+                style="@style/SettingMainItemText"
+                android:text="@string/setting_currency" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/setting_main_4"
+            style="@style/SettingMainItem"
+            android:layout_below="@id/setting_main_1">
+
+            <ImageView
+                style="@style/SettingMainItemImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bg_main_safety" />
+
+            <TextView
+                style="@style/SettingMainItemText"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/setting_safetry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/setting_main_5"
+            style="@style/SettingMainItem"
+            android:layout_below="@id/setting_main_2"
+            android:layout_toRightOf="@id/setting_main_4">
+
+            <ImageView
+                style="@style/SettingMainItemImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bg_main_upgrade" />
+
+            <TextView
+                style="@style/SettingMainItemText"
+                android:text="@string/setting_upgrade" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/setting_main_6"
+            style="@style/SettingMainItem"
+            android:layout_below="@id/setting_main_3"
+            android:layout_toRightOf="@id/setting_main_5">
+
+            <ImageView
+                style="@style/SettingMainItemImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bg_main_about" />
+
+            <TextView
+                style="@style/SettingMainItemText"
+                android:text="@string/setting_anent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

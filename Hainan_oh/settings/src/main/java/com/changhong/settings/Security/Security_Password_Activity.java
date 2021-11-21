@@ -58,9 +58,11 @@ public class Security_Password_Activity extends Activity implements View.OnKeyLi
                 if (protection == false) {
                     protection = true;
                     protection_close_on.setText("开启");
+                    Settings.Secure.putInt(Security_Password_Activity.this.getContentResolver(),"password_protect_state",1);
                 } else {
                     protection = false;
                     protection_close_on.setText("关闭");
+                    Settings.Secure.putInt(Security_Password_Activity.this.getContentResolver(),"password_protect_state",0);
                 }
                 Log.e(TAG, "onKey: 按下了左右键");
             }

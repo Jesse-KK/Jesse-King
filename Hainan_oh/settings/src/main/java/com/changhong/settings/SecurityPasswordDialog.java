@@ -24,6 +24,7 @@ public class SecurityPasswordDialog extends Dialog {
         public void InCorrectCallBack();
 
         public void EmptyCallBack();
+        public void dismissCallBack();
     }
 
     public SecurityPasswordDialog(Context context, int theme, SecurityPasswordDialog.EditCheckCallBack editCheckCallBack) {
@@ -90,6 +91,7 @@ public class SecurityPasswordDialog extends Dialog {
             @Override
             public void onClick(View v) {
                 dismiss();
+                kCall.dismissCallBack();
             }
         });
     }

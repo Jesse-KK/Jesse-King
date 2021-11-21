@@ -6,7 +6,7 @@
 <!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_wifi_info_ipv4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/wifi_message_ipv4" />-->
 <!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_wifi_info_ipv6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/wifi_message_ipv6" />-->
     <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/_200dp" android:layout_marginTop="@dimen/_31dp">
-        <TextView android:layout_gravity="center" android:layout_marginTop="0.0dip" android:text="网络信息" style="@style/SettingPartTitle" />
+        <TextView android:layout_gravity="center" android:layout_marginTop="0.0dip" android:text="IPv4网络信息" style="@style/SettingPartTitle" />
     </LinearLayout>
     <ScrollView android:id="@id/sv_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
         <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/setting_wlan_home" android:layout_width="@dimen/_820dp" android:layout_height="fill_parent">

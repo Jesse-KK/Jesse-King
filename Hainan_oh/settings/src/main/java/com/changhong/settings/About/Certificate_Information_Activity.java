@@ -1,15 +1,17 @@
 package com.changhong.settings.About;
 
-import android.annotation.Nullable;
+//import android.annotation.Nullable;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.TextView;
 
 
+import androidx.annotation.Nullable;
+
 import com.changhong.settings.R;
 
-public class Certificate_Information_Activity extends Activity {
+public class    Certificate_Information_Activity extends Activity {
     private static final String TAG = "认证信息";
     private TextView address_certification, account_certification;
     private Context mContext = Certificate_Information_Activity.this;

@@ -17,14 +17,15 @@ import java.util.Map;
 
 
 public class ConnectBluetoothService extends Service {
-    private static final String TAG="ConnectBluetoothService";
+    private static final String TAG = "ConnectBluetoothService";
     private BluetoothAdapter mBluetoothAdapter;
-    private Context context=ConnectBluetoothService.this;
+    private Context context = ConnectBluetoothService.this;
     private BluetoothManager bluetoothManager;
-    public PairedListAdapter pairedListAdapter=BluetoothMainActivity.pairedListAdapter;
+    public PairedListAdapter pairedListAdapter = BluetoothMainActivity.pairedListAdapter;
     private BluetoothProfile.ServiceListener proxyListener = new BluetoothProfile.ServiceListener() {
-    private List<Map<String, Object>> pairedDevicesList = BluetoothMainActivity.pairedDevicesList;
-    private List<Map<String, Object>> allDevicesList = BluetoothMainActivity.allDevicesList;
+        private List<Map<String, Object>> pairedDevicesList = BluetoothMainActivity.pairedDevicesList;
+        private List<Map<String, Object>> allDevicesList = BluetoothMainActivity.allDevicesList;
+
         @Override
         public void onServiceConnected(int profile, BluetoothProfile proxy) {
 
@@ -78,36 +79,44 @@ public class ConnectBluetoothService extends Service {
         int health2 = bluetoothAdapter.getProfileConnectionState(BluetoothProfile.GATT_SERVER);
         int health3 = bluetoothAdapter.getProfileConnectionState(BluetoothProfile.HEADSET);
 //        int health4 = bluetoothAdapter.getProfileConnectionState(BluetoothProfile.HEARING_AID);
-        int health5 = bluetoothAdapter.getProfileConnectionState(BluetoothProfile.HID_DEVICE);
-        int health6 = bluetoothAdapter.getProfileConnectionState(BluetoothProfile.SAP);
+
+
+//        int health5 = bluetoothAdapter.getProfileConnectionState(BluetoothProfile.HID_DEVICE);
+//        int health6 = bluetoothAdapter.getProfileConnectionState(BluetoothProfile.SAP);
+
 
         if (a2dp == BluetoothProfile.STATE_CONNECTED) {
             flag = a2dp;
-            Log.e(TAG, "getConnectState2:a2dp " );
+            Log.e(TAG, "getConnectState2:a2dp ");
         } else if (headset == BluetoothProfile.STATE_CONNECTED) {
             flag = headset;
-            Log.e(TAG, "getConnectState2:headset " );
+            Log.e(TAG, "getConnectState2:headset ");
         } else if (health == BluetoothProfile.STATE_CONNECTED) {
             flag = health;
-            Log.e(TAG, "getConnectState2:health " );
+            Log.e(TAG, "getConnectState2:health ");
         } else if (health1 == BluetoothProfile.STATE_CONNECTED) {
             flag = health1;
-            Log.e(TAG, "getConnectState2:health1 " );
+            Log.e(TAG, "getConnectState2:health1 ");
         } else if (health2 == BluetoothProfile.STATE_CONNECTED) {
             flag = health2;
-            Log.e(TAG, "getConnectState2:health2 " );
+            Log.e(TAG, "getConnectState2:health2 ");
         } else if (health3 == BluetoothProfile.STATE_CONNECTED) {
             flag = health3;
-            Log.e(TAG, "getConnectState2:health3 " );
+            Log.e(TAG, "getConnectState2:health3 ");
+
 //        } else if (health4 == BluetoothProfile.STATE_CONNECTED) {
 //            flag = health4;
-        } else if (health5 == BluetoothProfile.STATE_CONNECTED) {
-            flag = health5;
-            Log.e(TAG, "getConnectState2:health5 " );
-        } else if (health6 == BluetoothProfile.STATE_CONNECTED) {
-            flag = health6;
-            Log.e(TAG, "getConnectState2:health6 " );
+
+
+//        } else if (health5 == BluetoothProfile.STATE_CONNECTED) {
+//            flag = health5;
+//            Log.e(TAG, "getConnectState2:health5 ");
+//        } else if (health6 == BluetoothProfile.STATE_CONNECTED) {
+//            flag = health6;
+//            Log.e(TAG, "getConnectState2:health6 ");
         }
+//        }
+
         Log.e(TAG, "flag is " + flag);
         if (flag != -1) {
             mBluetoothAdapter.getProfileProxy(context, proxyListener, flag);
@@ -120,11 +129,10 @@ public class ConnectBluetoothService extends Service {
     }
 
 
-
     @Override
     public IBinder onBind(Intent intent) {
         return null;
     }
 
-
 }
+

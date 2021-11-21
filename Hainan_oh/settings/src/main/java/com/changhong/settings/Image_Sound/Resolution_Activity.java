@@ -54,7 +54,7 @@ public class Resolution_Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resolution);
-        list_resolution = findViewById(R.id.display_resolution_list);
+        list_resolution =(ListView) findViewById(R.id.display_resolution_list);
         mContext = Resolution_Activity.this;
         mDisplayManager = (DisplayManager) mContext.getSystemService(Context.DISPLAY_MANAGER_SERVICE);
 

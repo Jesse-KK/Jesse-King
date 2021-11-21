@@ -14,7 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.annotation.RequiresApi;
+
+//import androidx.annotation.RequiresApi;
 
 import com.changhong.settings.R;
 
@@ -25,7 +26,6 @@ public class Update_System_Auto_Activity extends Activity implements View.OnClic
     private int i=0;
     private static final String UnchangingAddress = "http://tview.itv.cmvideo.cn";
     private Handler mhandler=new Handler(){
-        @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);

@@ -4,14 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.text.Editable;
+import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-//import androidx.annotation.Nullable;
+import android.widget.Toast;
 
 import com.changhong.settings.R;
 
@@ -33,7 +32,8 @@ public class Input_Password_Activity extends Activity implements View.OnClickLis
         button_display_password = (Button) findViewById(R.id.button_display_password);
         button_confirm_input_password = (Button) findViewById(R.id.button_confirm_input_password);
 
-
+        String pwd = Settings.Secure.getString(Input_Password_Activity.this.getContentResolver(), "password_protect");
+        input_password_protection.setText(pwd);
         button_display_password.setOnClickListener(this);
         button_confirm_input_password.setOnClickListener(this);
     }
@@ -53,9 +53,13 @@ public class Input_Password_Activity extends Activity implements View.OnClickLis
                 }
                 break;
             case R.id.button_confirm_input_password:
-                Editable s = input_password_protection.getText();
-                String ss = s.toString();
-                Settings.Secure.putString(Input_Password_Activity.this.getContentResolver(), "password_protect", ss);
+                String inputpwd = input_password_protection.getText().toString();
+                if (TextUtils.isEmpty(inputpwd)) {
+                    // toast
+                    Toast.makeText(Input_Password_Activity.this, "设置的密码不能为空！", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                Settings.Secure.putString(Input_Password_Activity.this.getContentResolver(), "password_protect", inputpwd);
                 Intent intent = new Intent();
                 intent.setClass(Input_Password_Activity.this, Security_Password_Activity.class);
                 startActivity(intent);

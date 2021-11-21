@@ -4,6 +4,7 @@
     <color name="black">#ff000000</color>
     <color name="blue">#ff2d8eff</color>
     <color name="blue_dark">#3C48F7</color>
+    <color name="main_white">#ffffff</color>
     <color name="blue_user">#ff00a8ff</color>
     <color name="button_white">#ffffffff</color>
     <color name="dark">#ffb2b2b2</color>

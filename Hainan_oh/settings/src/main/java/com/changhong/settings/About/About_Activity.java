@@ -31,8 +31,8 @@ public class About_Activity extends Activity implements View.OnClickListener {
         device_message.setOnClickListener(this);
         service_frame_version_detaile = (RelativeLayout) findViewById(R.id.service_frame_version_detaile);
         service_frame_version_detaile.setOnClickListener(this);
-        service_type = (RelativeLayout) findViewById(R.id.service_type);
-        service_type.setOnClickListener(this);
+//        service_type = (RelativeLayout) findViewById(R.id.service_type);
+//        service_type.setOnClickListener(this);
         setting_net_diagnose = (RelativeLayout) findViewById(R.id.setting_net_diagnose);
         setting_net_diagnose.setOnClickListener(this);
 
@@ -53,9 +53,9 @@ public class About_Activity extends Activity implements View.OnClickListener {
             case R.id.service_frame_version_detaile:
                 intent.setClass(mContext, Version_Information_Activity.class);
                 break;
-            case R.id.service_type:
-                intent.setClass(mContext, Certificate_Information_Activity.class);
-                break;
+//            case R.id.service_type:
+//                intent.setClass(mContext, Certificate_Information_Activity.class);
+//                break;
             case R.id.setting_net_diagnose:
                 intent.setClass(mContext, Diagnose_Activity.class);
                 break;

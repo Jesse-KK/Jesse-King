@@ -92,7 +92,7 @@
     <string translatable="false" name="bluetooth_open_or_close_info">请重新开启或关闭蓝牙</string>
     <string translatable="false" name="bluetooth_open_status">蓝牙开关</string>
     <string translatable="false" name="bluetooth_operate_failed">操作过于频繁设备无法刷新</string>
-    <string translatable="false" name="bluetooth_operating_hints">遥控器进入配对模式后(指示灯闪烁时),机顶盒自动完成配对连接</string>
+        <string translatable="false" name="bluetooth_operating_hints">遥控器进入配对模式后(指示灯闪烁时),机顶盒自动完成配对连接</string>
     <string translatable="false" name="bluetooth_operating_hints_title1">按住菜单键 </string>
     <string translatable="false" name="bluetooth_operating_hints_title2"> 和返回键 </string>
     <string translatable="false" name="bluetooth_operating_hints_title3"> 靠近机顶盒</string>

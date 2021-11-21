@@ -44,33 +44,32 @@
 
             <RelativeLayout
                 android:layout_width="@dimen/_820dp"
-                android:layout_height="@dimen/_150dp"
-                android:focusable="true">
+                android:layout_height="@dimen/_150dp">
+
                 <TextView
                     style="@style/SettingSubTextView"
                     android:layout_marginLeft="@dimen/_180dp"
                     android:duplicateParentState="true"
-                    android:text="密码"
+                    android:text="账号"
                     android:textColor="@drawable/item_text_color"
                     android:textSize="22.0sp" />
 
                 <EditText
                     android:id="@+id/pppoe_connection_account"
-                    android:layout_width="@dimen/_394dp"
-                    android:nextFocusDown="@id/pppoe_connection_password"
+                    android:layout_width="@dimen/_560dp"
                     android:layout_height="@dimen/_85dp"
-                    android:focusable="true"
-                    android:background="@drawable/edittext_selector_on"
-                    android:layout_marginTop="@dimen/_20dp"
                     android:layout_marginLeft="@dimen/_254dp"
-                    android:gravity="center" />
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:nextFocusDown="@id/pppoe_connection_password" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="@dimen/_820dp"
-                android:layout_height="@dimen/_150dp"
-                android:focusable="true">
+                android:layout_height="@dimen/_150dp">
 
                 <TextView
                     style="@style/SettingSubTextView"
@@ -82,38 +81,42 @@
 
                 <EditText
                     android:id="@+id/pppoe_connection_password"
-                    android:layout_width="@dimen/_280dp"
+                    android:layout_width="@dimen/_400dp"
                     android:layout_height="@dimen/_85dp"
-                    android:layout_marginTop="@dimen/_20dp"
-                    android:focusable="true"
-                    android:nextFocusUp="@id/pppoe_connection_account"
-                    android:nextFocusDown="@id/button_confirm_pppoe_connection"
-                    android:background="@drawable/edittext_selector_on"
                     android:layout_marginLeft="@dimen/_254dp"
-                    android:gravity="center" />
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:nextFocusRight="@id/button_pppoepassword_visibility"
+                    android:nextFocusUp="@id/pppoe_connection_account"
+                    android:nextFocusDown="@id/button_confirm_pppoe_connection" />
 
                 <Button
                     android:id="@+id/button_pppoepassword_visibility"
                     android:layout_width="@dimen/_85dp"
                     android:layout_height="@dimen/_85dp"
-                    android:layout_marginLeft="@dimen/_560dp"
-                    android:text="显示"
-                    android:background="@drawable/selector_wifi_item"
-                    android:textSize="18sp"
+                    android:layout_marginLeft="@dimen/_704dp"
                     android:layout_marginTop="@dimen/_20dp"
-                    android:gravity="center" />
+                    android:background="@drawable/selector_wifi_item"
+                    android:focusable="true"
+                    android:nextFocusLeft="@id/pppoe_connection_password"
+                    android:gravity="center"
+                    android:text="显示"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
+
             <Button
                 android:id="@+id/button_confirm_pppoe_connection"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_70dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_50dp"
-                android:layout_width="@dimen/_100dp"
+                android:background="@drawable/selector_wifi_item"
                 android:nextFocusUp="@id/pppoe_connection_password"
                 android:text="连接"
-                android:background="@drawable/selector_wifi_item"
-                android:textSize="15sp"
-                android:layout_height="@dimen/_70dp"/>
+                android:textSize="15sp" />
 
         </LinearLayout>
     </ScrollView>

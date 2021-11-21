@@ -15,7 +15,7 @@
             style="@style/SettingPartTitle"
             android:layout_gravity="center"
             android:layout_marginTop="0.0dip"
-            android:text="网络信息" />
+            android:text="静态IPv4" />
     </LinearLayout>
 
     <TextView
@@ -59,11 +59,13 @@
 
                 <EditText
                     android:id="@+id/ip_1"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="225dp"
                     android:layout_toLeftOf="@id/ip_4text"
                     android:nextFocusRight="@id/ip_2"
                     android:nextFocusDown="@id/mask_1"></EditText>
@@ -82,12 +84,14 @@
 
                 <EditText
                     android:id="@+id/ip_2"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_230dp"
+                    android:layout_marginRight="200dp"
                     android:layout_toLeftOf="@id/ip_4text"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"
                     android:nextFocusLeft="@id/ip_1"
                     android:nextFocusRight="@id/ip_3"
                     android:nextFocusDown="@id/mask_2" />
@@ -106,13 +110,15 @@
 
                 <EditText
                     android:id="@+id/ip_3"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_125dp"
+                    android:layout_marginRight="125dp"
                     android:layout_toLeftOf="@id/ip_4text"
-                    android:nextFocusLeft="@id/ip_3"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"
+                    android:nextFocusLeft="@id/ip_2"
                     android:nextFocusRight="@id/ip_4"
                     android:nextFocusDown="@id/mask_3" />
 
@@ -130,11 +136,13 @@
 
                 <EditText
                     android:id="@+id/ip_4"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_15dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"
                     android:nextFocusLeft="@id/ip_3"
                     android:nextFocusRight="@id/ip"
                     android:nextFocusDown="@id/mask_4" />
@@ -157,11 +165,13 @@
 
                 <EditText
                     android:id="@+id/mask_1"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="225dp"
                     android:layout_toLeftOf="@id/mask_2text"
                     android:nextFocusRight="@id/mask_2"
                     android:nextFocusUp="@id/ip_1"
@@ -181,11 +191,13 @@
 
                 <EditText
                     android:id="@+id/mask_2"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="200dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_230dp"
                     android:layout_toLeftOf="@id/mask_4text"
                     android:nextFocusLeft="@id/mask_1"
                     android:nextFocusRight="@id/mask_3"
@@ -206,11 +218,13 @@
 
                 <EditText
                     android:id="@+id/mask_3"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="125dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_125dp"
                     android:layout_toLeftOf="@id/mask_4text"
                     android:nextFocusLeft="@id/mask_2"
                     android:nextFocusRight="@id/mask_4"
@@ -231,11 +245,13 @@
 
                 <EditText
                     android:id="@+id/mask_4"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_15dp"
                     android:nextFocusLeft="@id/mask_3"
                     android:nextFocusRight="@id/mask"
                     android:nextFocusUp="@id/ip_4"
@@ -259,11 +275,13 @@
 
                 <EditText
                     android:id="@+id/gateway_1"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="225dp"
                     android:layout_toLeftOf="@id/gateway_2text"
                     android:nextFocusRight="@id/gateway_2"
                     android:nextFocusUp="@id/mask_1"
@@ -283,11 +301,13 @@
 
                 <EditText
                     android:id="@+id/gateway_2"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="200dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_230dp"
                     android:layout_toLeftOf="@id/gateway_4text"
                     android:nextFocusLeft="@id/gateway_1"
                     android:nextFocusRight="@id/gateway_3"
@@ -308,11 +328,13 @@
 
                 <EditText
                     android:id="@+id/gateway_3"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="125dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_125dp"
                     android:layout_toLeftOf="@id/gateway_4text"
                     android:nextFocusLeft="@id/gateway_2"
                     android:nextFocusRight="@id/gateway_4"
@@ -333,11 +355,13 @@
 
                 <EditText
                     android:id="@+id/gateway_4"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_15dp"
                     android:nextFocusLeft="@id/gateway_3"
                     android:nextFocusRight="@id/gateway"
                     android:nextFocusUp="@id/mask_4"
@@ -361,11 +385,13 @@
 
                 <EditText
                     android:id="@+id/dns_1"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="225dp"
                     android:layout_toLeftOf="@id/dns_2text"
                     android:nextFocusRight="@id/dns_2"
                     android:nextFocusDown="@id/dns2_1"></EditText>
@@ -384,11 +410,13 @@
 
                 <EditText
                     android:id="@+id/dns_2"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="200dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_230dp"
                     android:layout_toLeftOf="@id/dns_4text"
                     android:nextFocusLeft="@id/dns_1"
                     android:nextFocusRight="@id/dns_3"
@@ -409,11 +437,13 @@
 
                 <EditText
                     android:id="@+id/dns_3"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="125dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_125dp"
                     android:layout_toLeftOf="@id/dns_4text"
                     android:nextFocusLeft="@id/dns_2"
                     android:nextFocusRight="@id/dns_4"
@@ -434,11 +464,13 @@
 
                 <EditText
                     android:id="@+id/dns_4"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_15dp"
                     android:nextFocusLeft="@id/dns_3"
                     android:nextFocusRight="@id/dns"
                     android:nextFocusUp="@id/gateway_4"
@@ -462,11 +494,13 @@
 
                 <EditText
                     android:id="@+id/dns2_1"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="225dp"
                     android:layout_toLeftOf="@id/dns2_2text"
                     android:nextFocusRight="@id/dns2_2"
                     android:nextFocusUp="@id/dns_1"
@@ -486,11 +520,13 @@
 
                 <EditText
                     android:id="@+id/dns2_2"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="200dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_230dp"
                     android:layout_toLeftOf="@id/dns2_4text"
                     android:nextFocusRight="@id/dns2_3"
                     android:nextFocusUp="@id/dns_2"
@@ -510,11 +546,13 @@
 
                 <EditText
                     android:id="@+id/dns2_3"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="125dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_125dp"
                     android:layout_toLeftOf="@id/dns2_4text"
                     android:nextFocusRight="@id/dns2_4"
                     android:nextFocusUp="@id/dns_3"
@@ -534,11 +572,13 @@
 
                 <EditText
                     android:id="@+id/dns2_4"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/_15dp"
                     android:nextFocusRight="@id/dns2"
                     android:nextFocusUp="@id/dns_4"
                     android:nextFocusDown="@id/dns2"></EditText>

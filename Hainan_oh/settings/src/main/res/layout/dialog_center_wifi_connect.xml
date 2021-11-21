@@ -15,16 +15,16 @@
         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_20dp">
             <TextView android:textSize="@dimen/_30sp" android:layout_width="@dimen/_150dp" android:layout_height="@dimen/_40dp" android:text="@string/wifi_password_connect" android:singleLine="true" />
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                    <EditText android:gravity="center_vertical" android:id="@+id/tv_wifi_password"  android:textColor="@color/colorWhite" android:background="@drawable/wifi_password_selector" android:focusable="true" android:nextFocusUp="@id/ap_name" android:nextFocusRight="@id/show_password" android:nextFocusDown="@id/custom_password_edittext" android:layout_width="@dimen/_300dp" android:layout_height="@dimen/_60dp" android:singleLine="true" android:inputType="text" />
+                    <EditText android:gravity="center_vertical" android:id="@+id/tv_wifi_password"  android:textColor="@color/colorWhite" android:background="@drawable/wifi_password_selector" android:focusable="true" android:nextFocusUp="@id/ap_name" android:nextFocusRight="@id/show_password" android:nextFocusDown="@id/custom_password_edittext" android:layout_width="@dimen/_300dp" android:layout_height="@dimen/_60dp" android:singleLine="true" android:inputType="textPassword" />
 
                 <CheckBox
                     android:id="@+id/show_password"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:nextFocusLeft="@id/tv_wifi_password"
                     android:layout_marginLeft="@dimen/_5dp"
                     android:layout_marginRight="@dimen/_5dp"
-                    style="@style/WifiDialogCbStyle"
-                    ></CheckBox>
+                    style="@style/WifiDialogCbStyle"/>
                 <TextView android:textSize="@dimen/_30sp" android:layout_width="@dimen/_150dp" android:layout_height="@dimen/_40dp" android:text="显示密码" android:singleLine="true" />
             </LinearLayout>
         </LinearLayout>
