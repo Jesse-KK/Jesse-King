@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_31dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingPartTitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="0.0dip"
+            android:text="静态IPv4" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_620dp"
+        android:focusable="false"
+        android:padding="10.0dip"
+        android:text="@string/delay_time_edit_desc"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_36dp" />
+
+    <ScrollView
+        android:id="@id/sv_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/setting_wlan_home"
+            android:layout_width="@dimen/_820dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ip"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusRight="@id/ip_1"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="IP地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/ip_1"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/ip_4text"
+                    android:nextFocusRight="@id/ip_2"
+                    android:nextFocusDown="@id/mask_1"></EditText>
+
+                <TextView
+                    android:id="@+id/ip_2text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/ip_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/ip_2"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="200dp"
+                    android:layout_toLeftOf="@id/ip_4text"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"
+                    android:nextFocusLeft="@id/ip_1"
+                    android:nextFocusRight="@id/ip_3"
+                    android:nextFocusDown="@id/mask_2" />
+
+                <TextView
+                    android:id="@+id/ip_3ext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/ip_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/ip_3"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="125dp"
+                    android:layout_toLeftOf="@id/ip_4text"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"
+                    android:nextFocusLeft="@id/ip_2"
+                    android:nextFocusRight="@id/ip_4"
+                    android:nextFocusDown="@id/mask_3" />
+
+                <TextView
+                    android:id="@+id/ip_4text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/ip_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/ip_4"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:gravity="center"
+                    android:nextFocusLeft="@id/ip_3"
+                    android:nextFocusRight="@id/ip"
+                    android:nextFocusDown="@id/mask_4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mask"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="子网掩码"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/mask_1"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/mask_2text"
+                    android:nextFocusRight="@id/mask_2"
+                    android:nextFocusUp="@id/ip_1"
+                    android:nextFocusDown="@id/gateway_1" />
+
+                <TextView
+                    android:id="@+id/mask_2text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/mask_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/mask_2"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="200dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/mask_4text"
+                    android:nextFocusLeft="@id/mask_1"
+                    android:nextFocusRight="@id/mask_3"
+                    android:nextFocusUp="@id/ip_2"
+                    android:nextFocusDown="@id/gateway_2"></EditText>
+
+                <TextView
+                    android:id="@+id/mask_3ext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/mask_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/mask_3"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="125dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/mask_4text"
+                    android:nextFocusLeft="@id/mask_2"
+                    android:nextFocusRight="@id/mask_4"
+                    android:nextFocusUp="@id/ip_3"
+                    android:nextFocusDown="@id/gateway_3"></EditText>
+
+                <TextView
+                    android:id="@+id/mask_4text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/mask_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/mask_4"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:nextFocusLeft="@id/mask_3"
+                    android:nextFocusRight="@id/mask"
+                    android:nextFocusUp="@id/ip_4"
+                    android:nextFocusDown="@id/gateway_4"></EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gateway"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="网关地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/gateway_1"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/gateway_2text"
+                    android:nextFocusRight="@id/gateway_2"
+                    android:nextFocusUp="@id/mask_1"
+                    android:nextFocusDown="@id/dns_1"></EditText>
+
+                <TextView
+                    android:id="@+id/gateway_2text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/gateway_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/gateway_2"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="200dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/gateway_4text"
+                    android:nextFocusLeft="@id/gateway_1"
+                    android:nextFocusRight="@id/gateway_3"
+                    android:nextFocusUp="@id/mask_2"
+                    android:nextFocusDown="@id/dns_2"></EditText>
+
+                <TextView
+                    android:id="@+id/gateway_3ext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/gateway_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/gateway_3"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="125dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/gateway_4text"
+                    android:nextFocusLeft="@id/gateway_2"
+                    android:nextFocusRight="@id/gateway_4"
+                    android:nextFocusUp="@id/mask_3"
+                    android:nextFocusDown="@id/dns_3"></EditText>
+
+                <TextView
+                    android:id="@+id/gateway_4text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/gateway_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/gateway_4"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:nextFocusLeft="@id/gateway_3"
+                    android:nextFocusRight="@id/gateway"
+                    android:nextFocusUp="@id/mask_4"
+                    android:nextFocusDown="@id/dns_4"></EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dns"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="DNS地址"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/dns_1"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dns_2text"
+                    android:nextFocusRight="@id/dns_2"
+                    android:nextFocusDown="@id/dns2_1"></EditText>
+
+                <TextView
+                    android:id="@+id/dns_2text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/dns_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns_2"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="200dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dns_4text"
+                    android:nextFocusLeft="@id/dns_1"
+                    android:nextFocusRight="@id/dns_3"
+                    android:nextFocusUp="@id/gateway_1"
+                    android:nextFocusDown="@id/dns2_2"></EditText>
+
+                <TextView
+                    android:id="@+id/dns_3ext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/dns_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns_3"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="125dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dns_4text"
+                    android:nextFocusLeft="@id/dns_2"
+                    android:nextFocusRight="@id/dns_4"
+                    android:nextFocusUp="@id/gateway_3"
+                    android:nextFocusDown="@id/dns2_3"></EditText>
+
+                <TextView
+                    android:id="@+id/dns_4text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/dns_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns_4"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:nextFocusLeft="@id/dns_3"
+                    android:nextFocusRight="@id/dns"
+                    android:nextFocusUp="@id/gateway_4"
+                    android:nextFocusDown="@id/dns2_4"></EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dns2"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="备用DNS"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/dns2_1"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="275dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dns2_2text"
+                    android:nextFocusRight="@id/dns2_2"
+                    android:nextFocusUp="@id/dns_1"
+                    android:nextFocusDown="@id/button_confirm__static_ipv4_connection"></EditText>
+
+                <TextView
+                    android:id="@+id/dns2_2text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/dns2_2"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns2_2"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="200dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dns2_4text"
+                    android:nextFocusRight="@id/dns2_3"
+                    android:nextFocusUp="@id/dns_2"
+                    android:nextFocusDown="@id/dns2"></EditText>
+
+                <TextView
+                    android:id="@+id/dns2_3ext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/dns2_3"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns2_3"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="125dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dns2_4text"
+                    android:nextFocusRight="@id/dns2_4"
+                    android:nextFocusUp="@id/dns_3"
+                    android:nextFocusDown="@id/dns2"></EditText>
+
+                <TextView
+                    android:id="@+id/dns2_4text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/dns2_4"
+                    android:duplicateParentState="true"
+                    android:text="."
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="20.0sp" />
+
+                <EditText
+                    android:id="@+id/dns2_4"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_77dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_selector_on"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:nextFocusRight="@id/dns2"
+                    android:nextFocusUp="@id/dns_4"
+                    android:nextFocusDown="@id/dns2"></EditText>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_confirm__static_ipv4_connection"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20dp"
+                android:gravity="center"
+                android:text="连接"
+                android:textSize="@dimen/_28sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

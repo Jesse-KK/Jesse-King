@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_wifi_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/_85dp">
+        <ImageView android:id="@id/iv_wifi_lock" android:duplicateParentState="true" android:layout_width="@dimen/_60dp" android:layout_height="@dimen/_60dp" android:layout_marginLeft="@dimen/_30dp" style="@style/SettingLeftImageView" />
+        <TextView android:textSize="22.0sp" android:textColor="@drawable/item_text_color" android:id="@id/tv_wifi_name" android:duplicateParentState="true" android:layout_marginLeft="@dimen/_124dp" android:singleLine="true" style="@style/SettingSubTextView" />
+        <TextView android:textSize="22.0sp" android:textColor="@drawable/item_text_color" android:ellipsize="end" android:id="@id/tv_wifi_status" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_50dp" android:maxEms="30" android:singleLine="true" android:layout_toRightOf="@id/tv_wifi_name" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_wifi_arrow" android:duplicateParentState="true" style="@style/SettingRightImageView" />
+    </RelativeLayout>
+</RelativeLayout>

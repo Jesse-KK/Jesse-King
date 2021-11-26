@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_31dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingPartTitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="0.0dip"
+            android:text="@string/setting_currency_restore" />
+    </LinearLayout>
+    <!--    设备信息-->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="@dimen/_947dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_254dp"
+                android:focusable="false"
+                android:padding="10.0dip"
+                android:text="@string/delay_time_edit_desc"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_36dp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_550dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:text="密码"
+                    android:textSize="@dimen/_36sp" />
+
+                <EditText
+                    android:id="@+id/input_password_resetting"
+                    android:layout_width="@dimen/_300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_100dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/button_confirm_resetting" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_confirm_resetting"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="@dimen/_80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_100dp"
+                android:background="@drawable/selector_wifi_item"
+                android:gravity="center"
+                android:nextFocusUp="@+id/input_password_resetting"
+                android:text="@string/setting_restore_ok" />
+
+            <RelativeLayout
+                android:id="@+id/toast_message_recovery"
+                android:layout_width="@dimen/_550dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_50dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_20dp"
+                    android:background="@drawable/ic_toast_hint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_70dp"
+                    android:layout_marginTop="@dimen/_25dp"
+                    android:gravity="left"
+                    android:text="密码错误，请重新输入"
+                    android:textSize="@dimen/_30sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

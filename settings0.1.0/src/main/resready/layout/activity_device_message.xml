@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/_30dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_device_message_model" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/devices_devices_model" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_device_message_serial_32" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/deivces_serial_number" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_device_message_serial_15" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/devices_client_devices_number" />-->
+<!--    <com.shcmcc.setting.custonview.view.ItemView android:id="@id/activity_device_message_mac" android:layout_width="wrap_content" android:layout_height="wrap_content" app:name="@string/wan_mac_address" />-->
+<!--    <com.shcmcc.setting.custonview.view.ViewStub android:id="@id/activity_device_message_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />-->
+</LinearLayout>

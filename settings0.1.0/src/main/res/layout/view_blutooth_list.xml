@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/selector_wifi_item" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/_85dp">
+        <TextView android:textSize="22.0sp" android:textColor="@drawable/item_text_color" android:id="@+id/tv_paieredbluetooth_name" android:duplicateParentState="true" android:layout_marginLeft="@dimen/_124dp" android:singleLine="true" style="@style/SettingSubTextView" />
+    </RelativeLayout>
+</RelativeLayout>

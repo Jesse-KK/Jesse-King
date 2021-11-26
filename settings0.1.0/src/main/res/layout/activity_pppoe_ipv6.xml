@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_31dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingPartTitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="0.0dip"
+            android:text="@string/setting_net_pppoe_connect" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/sv_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/setting_wlan_home"
+            android:layout_width="@dimen/_820dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wifi_title"
+                android:layout_width="@dimen/_500dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_230dp"
+                android:focusable="false"
+                android:padding="10.0dip"
+                android:text="@string/setting_restore_ok_msg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_24sp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_150dp">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:layout_marginLeft="@dimen/_180dp"
+                    android:duplicateParentState="true"
+                    android:text="账号"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/pppoe_connection_account6"
+                    android:layout_width="@dimen/_560dp"
+                    android:layout_height="@dimen/_85dp"
+                    android:layout_marginLeft="@dimen/_254dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:nextFocusDown="@id/pppoe_connection_password6" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_150dp">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:layout_marginLeft="@dimen/_180dp"
+                    android:duplicateParentState="true"
+                    android:text="密码"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <EditText
+                    android:id="@+id/pppoe_connection_password6"
+                    android:layout_width="@dimen/_400dp"
+                    android:layout_height="@dimen/_85dp"
+                    android:layout_marginLeft="@dimen/_254dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@drawable/edittext_selector_on"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:nextFocusRight="@id/button_pppoepassword_visibility6"
+                    android:nextFocusUp="@id/pppoe_connection_account"
+                    android:nextFocusDown="@id/button_confirm_pppoe_connection6" />
+
+                <Button
+                    android:id="@+id/button_pppoepassword_visibility6"
+                    android:layout_width="@dimen/_85dp"
+                    android:layout_height="@dimen/_85dp"
+                    android:layout_marginLeft="@dimen/_704dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:background="@drawable/selector_wifi_item"
+                    android:focusable="true"
+                    android:nextFocusLeft="@id/pppoe_connection_password6"
+                    android:gravity="center"
+                    android:text="显示"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_confirm_pppoe_connection6"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_50dp"
+                android:background="@drawable/selector_wifi_item"
+                android:nextFocusUp="@id/pppoe_connection_password6"
+                android:text="连接"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

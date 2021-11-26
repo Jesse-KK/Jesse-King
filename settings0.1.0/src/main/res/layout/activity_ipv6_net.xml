@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_31dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingPartTitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="0.0dip"
+            android:text="IPv6网络" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/sv_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/setting_wlan_home"
+            android:layout_width="@dimen/_820dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_net_ipv6_dhcp"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_net_eth"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@+id/ic_arrow_right1"
+                    style="@style/SettingRightImageView"
+                    android:background="@drawable/ic_arrow_right_selector"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:id="@+id/dhcp_state_ipv6"
+                    style="@style/SettingSubChangeText"
+                    android:layout_toLeftOf="@id/ic_arrow_right1"
+                    android:duplicateParentState="true"
+                    android:text=""
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_net_ipv6_ipoe"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_net_ipoe"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@+id/ic_arrow_right2"
+                    style="@style/SettingRightImageView"
+                    android:background="@drawable/ic_arrow_right_selector"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:id="@+id/ipoe_state_ipv6"
+                    style="@style/SettingSubChangeText"
+                    android:layout_toLeftOf="@id/ic_arrow_right2"
+                    android:duplicateParentState="true"
+                    android:text=""
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_net_ipv6_pppoe"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_net_pppoe"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@+id/ic_arrow_right3"
+                    style="@style/SettingRightImageView"
+                    android:background="@drawable/ic_arrow_right_selector"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:id="@+id/pppoe_state_ipv6"
+                    style="@style/SettingSubChangeText"
+                    android:layout_toLeftOf="@id/ic_arrow_right3"
+                    android:duplicateParentState="true"
+                    android:text=""
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_net_ipv6_staticip"
+                android:layout_width="@dimen/_820dp"
+                android:layout_height="@dimen/_120dp"
+                android:background="@drawable/selector_wifi_item"
+                android:focusable="true"
+                android:nextFocusDown="@id/setting_wifi_detail_item_5">
+
+                <TextView
+                    style="@style/SettingSubTextView"
+                    android:duplicateParentState="true"
+                    android:text="@string/setting_net_static_ip"
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+
+                <ImageView
+                    android:id="@+id/ic_arrow_right4"
+                    style="@style/SettingRightImageView"
+                    android:background="@drawable/ic_arrow_right_selector"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:id="@+id/static_state_ipv6"
+                    style="@style/SettingSubChangeText"
+                    android:layout_toLeftOf="@id/ic_arrow_right4"
+                    android:duplicateParentState="true"
+                    android:text=""
+                    android:textColor="@drawable/item_text_color"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

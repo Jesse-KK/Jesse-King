@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:visibility="invisible" android:layout_marginTop="0.0dip" android:text="@string/setting_net_IPv4" style="@style/SettingSubTitlePlaceholder" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_setting_net_ipv4_dhcp" android:background="@drawable/ic_btn_selector" android:layout_marginTop="0.0dip" style="@style/SettingSubLayout">
+        <TextView android:textColor="@color/item_text_color" android:duplicateParentState="true" android:text="@string/setting_net_eth" style="@style/SettingSubTextView" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/_36dp" android:textColor="@color/item_text_color" android:id="@id/tv_connect_status_dhcp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12dp" android:text="" />
+            <ImageView android:background="@drawable/ic_arrow_right_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_setting_net_ipv4_ipoe" android:background="@drawable/ic_btn_selector" android:visibility="visible" android:layout_marginTop="0.0dip" style="@style/SettingSubLayout">
+        <TextView android:textColor="@color/item_text_color" android:duplicateParentState="true" android:text="@string/setting_net_ipoe" style="@style/SettingSubTextView" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/_36dp" android:textColor="@color/item_text_color" android:id="@id/tv_connect_status_ipoe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12dp" android:text="" />
+            <ImageView android:background="@drawable/ic_arrow_right_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_setting_net_ipv4_pppoe" android:background="@drawable/ic_btn_selector" android:visibility="visible" android:layout_marginTop="0.0dip" style="@style/SettingSubLayout">
+        <TextView android:textColor="@color/item_text_color" android:duplicateParentState="true" android:text="@string/setting_net_pppoe" style="@style/SettingSubTextView" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/_36dp" android:textColor="@color/item_text_color" android:id="@id/tv_connect_status_ppoe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12dp" android:text="" />
+            <ImageView android:background="@drawable/ic_arrow_right_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_setting_net_ipv4_staticip" android:background="@drawable/ic_btn_selector" android:layout_marginTop="0.0dip" style="@style/SettingSubLayout">
+        <TextView android:textColor="@color/item_text_color" android:duplicateParentState="true" android:text="@string/setting_net_static_ip" style="@style/SettingSubTextView" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/_36dp" android:textColor="@color/item_text_color" android:id="@id/tv_connect_status_staticip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12dp" android:text="" />
+            <ImageView android:background="@drawable/ic_arrow_right_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

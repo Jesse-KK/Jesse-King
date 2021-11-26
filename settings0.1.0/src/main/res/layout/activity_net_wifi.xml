@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/act_wifi_lin" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="26.0sp" android:text="@string/setting_net_wifi" style="@style/SettingPartTitle" />
+    <include layout="@layout/custom_dialog_msg" android:id="@+id/custom_dialog_progress"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/setting_wifi_main_home" android:layout_width="@dimen/_820dp" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_60dp">
+        <ListView android:id="@+id/wifi_setting_list" android:scrollbars="none" android:fadingEdge="vertical" android:fadingEdgeLength="0.0dip" android:nextFocusDown="@id/wifi_setting_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="-6.0dip" />
+    </RelativeLayout>
+</LinearLayout>
